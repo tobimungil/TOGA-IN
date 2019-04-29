@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+
 class Berita{
     var image: UIImage
     var title: String

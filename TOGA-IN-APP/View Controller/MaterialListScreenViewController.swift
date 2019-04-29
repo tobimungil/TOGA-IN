@@ -45,9 +45,10 @@ class MaterialListScreen: UIViewController {
         
         return searchMaterial
     }
+    
 }
 
-extension MaterialListScreen: UITableViewDataSource{
+extension MaterialListScreen: UITableViewDataSource,UITableViewDelegate{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return searchMaterial.count
@@ -61,9 +62,16 @@ extension MaterialListScreen: UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+    
+    
 }
 
 extension MaterialListScreen: UISearchBarDelegate{
+    
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         guard !searchText.isEmpty else {
             searchMaterial = materials

@@ -20,6 +20,12 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.topItem?.title = "Home"
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        
+//        tabBarController?.tabBar.isHidden = true
 
         beritas = createBeritaHome()
         // Do any additional setup after loading the view.

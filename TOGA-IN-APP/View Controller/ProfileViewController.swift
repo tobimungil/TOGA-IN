@@ -16,6 +16,8 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         super.viewDidLoad()
         
         navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.topItem?.title = "Profile"
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         
 
         // Do any additional setup after loading the view.

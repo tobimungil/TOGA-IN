@@ -1,35 +1,30 @@
 //
-//  DetailTanamanViewController.swift
+//  DetailResepViewController.swift
 //  TOGA-IN-APP
 //
-//  Created by Ricky Effendi on 28/04/19.
+//  Created by Ricky Effendi on 30/04/19.
 //  Copyright © 2019 Pramahadi Tama Putra. All rights reserved.
 //
 
 import UIKit
 
-class DetailTanamanViewController: UIViewController {
+class DetailResepViewController: UIViewController {
     @IBOutlet weak var lblJudul: UILabel!
-    @IBOutlet weak var imgTanaman: UIImageView!
+    @IBOutlet weak var lblAuthor: UILabel!
     @IBOutlet weak var lblDetail: UILabel!
-    @IBOutlet weak var lblKhasiat: UILabel!
-    @IBOutlet weak var lblKontra: UILabel!
+    @IBOutlet weak var lblLove: UILabel!
+    @IBOutlet weak var lblCara: UILabel!
     
-    var judul: String = "", detail: String = "", khasiat: String = ""
-    var img: UIImage?
-    
+    var judul = "", author = "", detail = "", love = "", cara = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         lblJudul.text = judul
-        imgTanaman.image = img
+        lblAuthor.text = author
         lblDetail.text = detail
-        lblKhasiat.text = khasiat
-//        lblKontra.text = kontra
-        //lblKontra.text = kontra
-        
-        navigationController?.navigationBar.shadowImage = UIImage()
+        lblLove.text = love
+        lblCara.text = cara
 
         // Do any additional setup after loading the view.
     }

@@ -38,6 +38,13 @@ class MaterialListScreen: UIViewController {
     func createArray() -> [Material]{
         
         
+        
+//        let material1 = Material(image: #imageLiteral(resourceName: "alang alang"), title: "Alang-alang")
+//        let material2 = Material(image: #imageLiteral(resourceName: "Asam Jawa"), title: "Asam Jawa")
+//        let material3 = Material(image: #imageLiteral(resourceName: "berita 1"), title: "Daun Saga")
+//        let material4 = Material(image: #imageLiteral(resourceName: "Jahe merah"), title: "Jahe Merah")
+//        let material5 = Material(image: #imageLiteral(resourceName: "Talas"), title: "Talas")
+        
         let material1 = Material(image: #imageLiteral(resourceName: "Talas"), title: "Alang-Alang", desc: "alang-alang adalah obat canggih", khasiat: "Bikin cepat kaya", kontra: "kalo kebanyakan di pake ketagihan")
         materials.append(material1)
        

@@ -26,7 +26,7 @@ class ResepListScreen: UIViewController {
     func createArray() -> [Resep]{
         
         let resep1 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Obat Batuk Alami", contributor: "Charlie Chaplin", ratingAsli: "11", bintang: #imageLiteral(resourceName: "Hatipreview"))
-        let resep2 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Obat Panas Dalam Alang-Alang", contributor: "Ricardo Milos", ratingAsli: "109", bintang: #imageLiteral(resourceName: "Hatipreview"))
+        let resep2 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Obat Panas Dalam", contributor: "Ricardo Milos", ratingAsli: "109", bintang: #imageLiteral(resourceName: "Hatipreview"))
         let resep3 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Racikan Pilek", contributor: "Jonathan Chris", ratingAsli: "4", bintang: #imageLiteral(resourceName: "Hatipreview"))
         let resep4 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Obat Batuk Berdahak", contributor: "Gachi Muchi", ratingAsli: "52", bintang: #imageLiteral(resourceName: "Hatipreview"))
         let resep5 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Obat Sakit Tenggorokan Alami", contributor: "Charlie Chaplin", ratingAsli: "18", bintang: #imageLiteral(resourceName: "Hatipreview"))

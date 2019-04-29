@@ -13,10 +13,17 @@ class Material {
     
     var image: UIImage
     var title: String
+    var khasiat: String
+    var desc: String
+    var kontra: String
     
-    init(image: UIImage, title: String){
+    
+    init(image: UIImage, title: String, desc: String, khasiat: String, kontra: String){
         self.image = image
         self.title = title
+        self.desc = desc
+        self.khasiat = khasiat
+        self.kontra = kontra
     }
     
 }

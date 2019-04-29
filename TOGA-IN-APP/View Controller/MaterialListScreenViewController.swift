@@ -29,17 +29,10 @@ class MaterialListScreen: UIViewController {
         
         
         
-        let material1 = Material(image: #imageLiteral(resourceName: "dummyImage"), title: "Alang-alang")
-        let material2 = Material(image: #imageLiteral(resourceName: "dummyImage"), title: "Aloe Vera")
-        let material3 = Material(image: #imageLiteral(resourceName: "dummyImage"), title: "Asparagus")
-        let material4 = Material(image: #imageLiteral(resourceName: "dummyImage"), title: "Bawang Putih")
-        let material5 = Material(image: #imageLiteral(resourceName: "dummyImage"), title: "Ciplukan")
         
+        let material1 = Material(image: #imageLiteral(resourceName: "Talas"), title: "Alang-Alang", desc: "alang-alang adalah obat canggih", khasiat: "Bikin cepat kaya", kontra: "kalo kebanyakan di pake ketagihan")
         materials.append(material1)
-        materials.append(material2)
-        materials.append(material3)
-        materials.append(material4)
-        materials.append(material5)
+       
         
         searchMaterial = materials
         
@@ -63,7 +56,14 @@ extension MaterialListScreen: UITableViewDataSource,UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewController = storyboard?.instantiateViewController(withIdentifier: "detailTanamanViewController") as! DetailTanamanViewController
         
+        viewController.judul = materials[indexPath.row].title
+        viewController.img = materials[indexPath.row].image
+        viewController.detail = materials[indexPath.row].desc
+        viewController.khasiat = materials[indexPath.row].khasiat
+        
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
     
     

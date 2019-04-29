@@ -14,14 +14,15 @@ class DetailTanamanViewController: UIViewController {
     @IBOutlet weak var lblDetail: UILabel!
     @IBOutlet weak var lblKhasiat: UILabel!
     
-    var judul = "", img = "", detail = "", khasiat = ""
+    var judul: String = "", detail: String = "", khasiat: String = ""
+    var img: UIImage?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         lblJudul.text = judul
-        imgTanaman.image = UIImage(named: img)
+        imgTanaman.image = img
         lblDetail.text = detail
         lblKhasiat.text = khasiat
         

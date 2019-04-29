@@ -46,7 +46,7 @@ class TestingViewController: UIViewController, UICollectionViewDataSource, UICol
         
         if collectionView.tag == 0 {
             viewController.judul = lblArray[indexPath.row]
-            viewController.img = imgArray[indexPath.row]
+            viewController.img = UIImage(named: imgArray[indexPath.row])
             viewController.detail = notesArray[indexPath.row]
             viewController.khasiat = khasiatArray[indexPath.row]
             

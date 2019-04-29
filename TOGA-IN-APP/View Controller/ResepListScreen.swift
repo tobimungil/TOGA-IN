@@ -71,6 +71,18 @@ extension ResepListScreen: UITableViewDataSource, UITableViewDelegate{
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewController = storyboard?.instantiateViewController(withIdentifier: "DetailResepViewController") as! DetailResepViewController
+        
+        viewController.judul = reseps[indexPath.row].title
+        viewController.author = reseps[indexPath.row].contributor
+        viewController.love = reseps[indexPath.row].ratingAsli
+        
+        print("tes", viewController.judul, viewController.author, viewController.love)
+        
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
 }
 
 extension ResepListScreen: UISearchBarDelegate{

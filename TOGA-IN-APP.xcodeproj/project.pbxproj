@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		509D933E22779F9400199C29 /* DetailResepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509D933D22779F9400199C29 /* DetailResepViewController.swift */; };
 		50B2846222777FC80023835C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B2846122777FC80023835C /* RegisterViewController.swift */; };
 		50CAA0BF2276DC320092677A /* TanamanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CAA0BE2276DC320092677A /* TanamanTableViewCell.swift */; };
 		50CAA0C12276DC720092677A /* TanamanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CAA0C02276DC720092677A /* TanamanCollectionViewCell.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		509D933D22779F9400199C29 /* DetailResepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailResepViewController.swift; sourceTree = "<group>"; };
 		50B2846122777FC80023835C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		50CAA0BE2276DC320092677A /* TanamanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanamanTableViewCell.swift; sourceTree = "<group>"; };
 		50CAA0C02276DC720092677A /* TanamanCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanamanCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				5EB431E722771C02006C2798 /* AddResepViewController.swift */,
 				50B2846122777FC80023835C /* RegisterViewController.swift */,
 				5EB431E922778962006C2798 /* detailMaterial.swift */,
+				509D933D22779F9400199C29 /* DetailResepViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				5E896656227465130029EB2A /* BeritaListScreen.swift in Sources */,
 				50E6CFA12276F3A300DCF0FE /* BeritaTableViewCell.swift in Sources */,
 				5EA979E22272F9A20032B27F /* MaterialListScreenViewController.swift in Sources */,
+				509D933E22779F9400199C29 /* DetailResepViewController.swift in Sources */,
 				50B2846222777FC80023835C /* RegisterViewController.swift in Sources */,
 				5EA979F02273EE7A0032B27F /* ResepListScreen.swift in Sources */,
 				50CAA0C32276DEE50092677A /* TestingViewController.swift in Sources */,
@@ -399,7 +403,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MTU6Z4VFLV;
+				DEVELOPMENT_TEAM = 64M6B7NHMY;
 				INFOPLIST_FILE = "TOGA-IN-APP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -417,7 +421,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = MTU6Z4VFLV;
+				DEVELOPMENT_TEAM = 64M6B7NHMY;
 				INFOPLIST_FILE = "TOGA-IN-APP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

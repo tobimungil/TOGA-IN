@@ -12,7 +12,7 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.tabBarController?.tabBar.isHidden = false
         
         if isLogin {
             let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)

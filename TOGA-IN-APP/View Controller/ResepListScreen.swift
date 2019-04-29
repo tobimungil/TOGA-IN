@@ -25,6 +25,10 @@ class ResepListScreen: UIViewController {
 //        bgResep.layer.shadowOpacity = 0.8
 //        bgResep.layer.shadowOffset = CGSize.zero
 //        bgResep.layer.shadowRadius = 5
+        
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.topItem?.title = "Resep"
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
 
         reseps = createArray()
        

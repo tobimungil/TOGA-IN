@@ -20,11 +20,14 @@ class DetailResepViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        
+        
         lblJudul.text = judul
         lblAuthor.text = author
         lblDetail.text = detail
         lblLove.text = love
         lblCara.text = cara
+        
 
         // Do any additional setup after loading the view.
     }

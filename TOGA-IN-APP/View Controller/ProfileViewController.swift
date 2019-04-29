@@ -20,18 +20,20 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         if isLogin {
             profileView.isHidden = false
+            navigationController?.navigationBar.topItem?.title = "Profile"
             self.tabBarController?.tabBar.isHidden = false
             footerView.isHidden = true
             loginView.isHidden = true
         } else {
             profileView.isHidden = true
+            navigationController?.navigationBar.topItem?.title = ""
             self.tabBarController?.tabBar.isHidden = true
             footerView.isHidden = true
             loginView.isHidden = false
         }
         
         navigationController?.navigationBar.shadowImage = UIImage()
-        navigationController?.navigationBar.topItem?.title = "Profile"
+        
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         
 

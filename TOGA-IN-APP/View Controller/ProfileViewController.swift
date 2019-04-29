@@ -17,6 +17,7 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
     @IBOutlet weak var lblWarning: UILabel!
     
     var namaTanaman: [String] = ["Jahe","Temulawak","Cabe","Pete","Jengkol"]
+    var imageTanaman: [String] = ["DummyGede","DummyGede","DummyGede","DummyGede","DummyGede"]
     
     @IBAction func btnMasukPress(_ sender: UIButton) {
         
@@ -76,6 +77,9 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ProfileCollectionViewCell", for: indexPath) as! ProfieCollectionViewCell
+        
+        cell.favoriteImage.image = UIImage(named: imageTanaman[indexPath.row])
+        cell.favoriteLabel.text = namaTanaman[indexPath.row]
         
         return cell
     }

@@ -27,6 +27,7 @@
 		5EA979F22273F1120032B27F /* ResepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA979F12273F1120032B27F /* ResepCell.swift */; };
 		5EA979F42273F2AA0032B27F /* Resep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA979F32273F2AA0032B27F /* Resep.swift */; };
 		5EB431E822771C02006C2798 /* AddResepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB431E722771C02006C2798 /* AddResepViewController.swift */; };
+		5EB431EA22778962006C2798 /* detailMaterial.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB431E922778962006C2798 /* detailMaterial.swift */; };
 		C34A128622756E1C005444AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34A128522756E1C005444AE /* LaunchScreen.storyboard */; };
 		C34A128822756F89005444AE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A128722756F89005444AE /* ProfileViewController.swift */; };
 		C34A128A22756FB4005444AE /* ProfieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A128922756FB4005444AE /* ProfieCollectionViewCell.swift */; };
@@ -59,6 +60,7 @@
 		5EA979F12273F1120032B27F /* ResepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResepCell.swift; sourceTree = "<group>"; };
 		5EA979F32273F2AA0032B27F /* Resep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resep.swift; sourceTree = "<group>"; };
 		5EB431E722771C02006C2798 /* AddResepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddResepViewController.swift; sourceTree = "<group>"; };
+		5EB431E922778962006C2798 /* detailMaterial.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = detailMaterial.swift; sourceTree = "<group>"; };
 		C34A128522756E1C005444AE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C34A128722756F89005444AE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C34A128922756FB4005444AE /* ProfieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfieCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				50CAA0C22276DEE50092677A /* TestingViewController.swift */,
 				5EB431E722771C02006C2798 /* AddResepViewController.swift */,
 				50B2846122777FC80023835C /* RegisterViewController.swift */,
+				5EB431E922778962006C2798 /* detailMaterial.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				50B2846222777FC80023835C /* RegisterViewController.swift in Sources */,
 				5EA979F02273EE7A0032B27F /* ResepListScreen.swift in Sources */,
 				50CAA0C32276DEE50092677A /* TestingViewController.swift in Sources */,
+				5EB431EA22778962006C2798 /* detailMaterial.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +399,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 64M6B7NHMY;
+				DEVELOPMENT_TEAM = MTU6Z4VFLV;
 				INFOPLIST_FILE = "TOGA-IN-APP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -413,7 +417,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 64M6B7NHMY;
+				DEVELOPMENT_TEAM = MTU6Z4VFLV;
 				INFOPLIST_FILE = "TOGA-IN-APP/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

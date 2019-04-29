@@ -1,36 +1,28 @@
 //
-//  DetailTanamanViewController.swift
+//  detailMaterial.swift
 //  TOGA-IN-APP
 //
-//  Created by Ricky Effendi on 28/04/19.
+//  Created by Mirza Fachreza 2 on 30/04/19.
 //  Copyright © 2019 Pramahadi Tama Putra. All rights reserved.
 //
 
 import UIKit
 
-class DetailTanamanViewController: UIViewController {
+class detailMaterial: UIViewController {
+
+    
     @IBOutlet weak var lblJudul: UILabel!
-    @IBOutlet weak var imgTanaman: UIImageView!
-    @IBOutlet weak var lblDetail: UILabel!
+    @IBOutlet weak var imgTanam: UIImageView!
+    @IBOutlet weak var lblDeskripsi: UILabel!
     @IBOutlet weak var lblKhasiat: UILabel!
     @IBOutlet weak var lblKontra: UILabel!
     
-    var judul: String = "", detail: String = "", khasiat: String = ""
-    var img: UIImage?
-    
+    var judul = "", img = "", detail = "", khasiat = "", kontra = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        lblJudul.text = judul
-        imgTanaman.image = img
-        lblDetail.text = detail
-        lblKhasiat.text = khasiat
-        lblKontra.text = kontra
-        
-        navigationController?.navigationBar.shadowImage = UIImage()
 
-        // Do any additional setup after loading the view.
+        lblJudul.text = judul
     }
     
 

@@ -13,11 +13,18 @@ class ResepListScreen: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     
-    var reseps: [Resep] = []
+    
+//    var reseps: [Resep] = []
     var searchResep: [Resep] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        bgResep.layer.cornerRadius = 7
+//        bgResep.layer.shadowColor = UIColor.black.cgColor
+//        bgResep.layer.shadowOpacity = 0.8
+//        bgResep.layer.shadowOffset = CGSize.zero
+//        bgResep.layer.shadowRadius = 5
 
         reseps = createArray()
        
@@ -25,13 +32,13 @@ class ResepListScreen: UIViewController {
     
     func createArray() -> [Resep]{
         
-        let resep1 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Obat Batuk Alami", contributor: "Charlie Chaplin", ratingAsli: "11", bintang: #imageLiteral(resourceName: "Hatipreview"))
-        let resep2 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Obat Panas Dalam", contributor: "Ricardo Milos", ratingAsli: "109", bintang: #imageLiteral(resourceName: "Hatipreview"))
-        let resep3 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Racikan Pilek", contributor: "Jonathan Chris", ratingAsli: "4", bintang: #imageLiteral(resourceName: "Hatipreview"))
-        let resep4 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Obat Batuk Berdahak", contributor: "Gachi Muchi", ratingAsli: "52", bintang: #imageLiteral(resourceName: "Hatipreview"))
-        let resep5 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Obat Sakit Tenggorokan Alami", contributor: "Charlie Chaplin", ratingAsli: "18", bintang: #imageLiteral(resourceName: "Hatipreview"))
-        let resep6 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Obat Flu Ringan", contributor: "Huey Keith", ratingAsli: "2", bintang: #imageLiteral(resourceName: "Hatipreview"))
-        let resep7 = Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Obat Masuk Angin Alami", contributor: "Charlie Chaplin", ratingAsli: "18", bintang: #imageLiteral(resourceName: "Hatipreview"))
+        let resep1 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Obat Batuk Alami", contributor: "Charlie Chaplin", ratingAsli: "11", bintang: #imageLiteral(resourceName: "Hatipreview"))
+        let resep2 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Obat Panas Dalam", contributor: "Ricardo Milos", ratingAsli: "109", bintang: #imageLiteral(resourceName: "Hatipreview"))
+        let resep3 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Racikan Pilek", contributor: "Jonathan Chris", ratingAsli: "4", bintang: #imageLiteral(resourceName: "Hatipreview"))
+        let resep4 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Obat Batuk Berdahak", contributor: "Gachi Muchi", ratingAsli: "52", bintang: #imageLiteral(resourceName: "Hatipreview"))
+        let resep5 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Obat Sakit Tenggorokan Alami", contributor: "Charlie Chaplin", ratingAsli: "18", bintang: #imageLiteral(resourceName: "Hatipreview"))
+        let resep6 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Obat Flu Ringan", contributor: "Huey Keith", ratingAsli: "2", bintang: #imageLiteral(resourceName: "Hatipreview"))
+        let resep7 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Obat Masuk Angin Alami", contributor: "Charlie Chaplin", ratingAsli: "18", bintang: #imageLiteral(resourceName: "Hatipreview"))
         
         
         reseps.append(resep1)

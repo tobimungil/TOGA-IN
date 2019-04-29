@@ -8,6 +8,8 @@
 
 import UIKit
 
+var reseps: [Resep] = []
+
 class AddResepViewController: UIViewController {
 
     

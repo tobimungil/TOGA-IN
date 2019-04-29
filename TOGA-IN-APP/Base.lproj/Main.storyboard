@@ -1846,7 +1846,6 @@
         <image name="tombolBack" width="19" height="31"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="veT-zp-zps"/>
         <segue reference="ckb-e5-ka8"/>
         <segue reference="bNd-FI-miF"/>
         <segue reference="mHI-Pn-lLY"/>

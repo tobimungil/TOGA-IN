@@ -12,7 +12,15 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.tabBarController?.tabBar.isHidden = true
+        
+        
+        if isLogin {
+            let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let nextViewControl = storyBoard.instantiateViewController(withIdentifier: "nextView") as! ProfileViewController
+            self.present(nextViewControl, animated: true, completion: nil)
+            
+        }
+        
         // Do any additional setup after loading the view.
     }
     

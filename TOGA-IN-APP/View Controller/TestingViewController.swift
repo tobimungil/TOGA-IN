@@ -86,6 +86,9 @@ class TestingViewController: UIViewController, UICollectionViewDataSource, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if isLogin == false {
+            print("tes")
+        }
         
         // Do any additional setup after loading the view.
     }

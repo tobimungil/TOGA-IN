@@ -643,7 +643,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="IconAdd"/>
                                         <connections>
-                                            <segue destination="04l-PO-c38" kind="show" id="04F-ah-x8R"/>
+                                            <segue destination="04l-PO-c38" kind="showDetail" id="LAd-aN-bx9"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1409,6 +1409,7 @@
         <!--Berita-->
         <scene sceneID="oZt-jL-Udp">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ag-Eb-h4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="U7Q-Df-xmF" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Berita" image="IconBerita-Disabled" selectedImage="IconBerita" id="G4R-s1-Bso"/>
                     <toolbarItems/>
@@ -1422,14 +1423,13 @@
                         <segue destination="pCd-AS-o3m" kind="relationship" relationship="rootViewController" id="eFX-s8-fs5"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4ag-Eb-h4w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5074" y="117"/>
         </scene>
         <!--Testing View Controller-->
         <scene sceneID="t7W-iq-ifG">
             <objects>
-                <viewController id="Kle-P7-tRY" customClass="TestingViewController" customModule="TOGA_IN_APP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="home" id="Kle-P7-tRY" customClass="TestingViewController" customModule="TOGA_IN_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AuT-t6-BnZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1658,7 +1658,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="tombolBack"/>
                                         <connections>
-                                            <segue destination="AY3-Ui-6UP" kind="show" id="eWI-Dz-axd"/>
+                                            <segue destination="wO6-cz-lNl" kind="show" identifier="home" id="HQW-Fx-bn3"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -1681,13 +1681,13 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Judul Resep..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q3R-sz-cSD">
+                                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" highlighted="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Judul Resep..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="q3R-sz-cSD">
                                                 <rect key="frame" x="17" y="303" width="381" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.92158097029999997" green="0.92154634000000002" blue="0.9215698242" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
+                                                <textInputTraits key="textInputTraits" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no" textContentType="name"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Deskripsi Resep" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bqB-jV-Gyx">
                                                 <rect key="frame" x="20" y="356" width="130" height="22"/>
@@ -1822,8 +1822,7 @@
         <image name="tombolBack" width="19" height="31"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="04F-ah-x8R"/>
-        <segue reference="eWI-Dz-axd"/>
+        <segue reference="HQW-Fx-bn3"/>
         <segue reference="34m-dj-dUv"/>
     </inferredMetricsTieBreakers>
 </document>

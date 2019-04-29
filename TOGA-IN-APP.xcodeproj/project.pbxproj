@@ -24,6 +24,7 @@
 		5EA979F02273EE7A0032B27F /* ResepListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA979EF2273EE7A0032B27F /* ResepListScreen.swift */; };
 		5EA979F22273F1120032B27F /* ResepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA979F12273F1120032B27F /* ResepCell.swift */; };
 		5EA979F42273F2AA0032B27F /* Resep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA979F32273F2AA0032B27F /* Resep.swift */; };
+		5EB8E14122770EB7006A0EE7 /* AddResepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EB8E14022770EB7006A0EE7 /* AddResepViewController.swift */; };
 		C34A128622756E1C005444AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34A128522756E1C005444AE /* LaunchScreen.storyboard */; };
 		C34A128822756F89005444AE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A128722756F89005444AE /* ProfileViewController.swift */; };
 		C34A128A22756FB4005444AE /* ProfieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A128922756FB4005444AE /* ProfieCollectionViewCell.swift */; };
@@ -53,6 +54,7 @@
 		5EA979EF2273EE7A0032B27F /* ResepListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResepListScreen.swift; sourceTree = "<group>"; };
 		5EA979F12273F1120032B27F /* ResepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResepCell.swift; sourceTree = "<group>"; };
 		5EA979F32273F2AA0032B27F /* Resep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resep.swift; sourceTree = "<group>"; };
+		5EB8E14022770EB7006A0EE7 /* AddResepViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AddResepViewController.swift; path = "../../Desktop/untitled folder/TOGA-IN-APP/View Controller/AddResepViewController.swift"; sourceTree = "<group>"; };
 		C34A128522756E1C005444AE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C34A128722756F89005444AE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C34A128922756FB4005444AE /* ProfieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfieCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -124,6 +126,7 @@
 			children = (
 				C397B1A82271CA2E00F7F7D0 /* TOGA-IN-APP */,
 				C397B1A72271CA2E00F7F7D0 /* Products */,
+				5EB8E14022770EB7006A0EE7 /* AddResepViewController.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -244,6 +247,7 @@
 				50E6CFA12276F3A300DCF0FE /* BeritaTableViewCell.swift in Sources */,
 				5EA979E22272F9A20032B27F /* MaterialListScreenViewController.swift in Sources */,
 				5EA979F02273EE7A0032B27F /* ResepListScreen.swift in Sources */,
+				5EB8E14122770EB7006A0EE7 /* AddResepViewController.swift in Sources */,
 				50CAA0C32276DEE50092677A /* TestingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

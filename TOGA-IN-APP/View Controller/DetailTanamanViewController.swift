@@ -26,7 +26,7 @@ class DetailTanamanViewController: UIViewController {
         imgTanaman.image = img
         lblDetail.text = detail
         lblKhasiat.text = khasiat
-        lblKontra.text = kontra
+//        lblKontra.text = kontra
         
         navigationController?.navigationBar.shadowImage = UIImage()
 

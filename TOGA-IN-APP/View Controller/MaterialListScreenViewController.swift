@@ -34,13 +34,6 @@ class MaterialListScreen: UIViewController {
     func createArray() -> [Material]{
         
         
-        
-        let material1 = Material(image: #imageLiteral(resourceName: "alang alang"), title: "Alang-alang")
-        let material2 = Material(image: #imageLiteral(resourceName: "Asam Jawa"), title: "Asam Jawa")
-        let material3 = Material(image: #imageLiteral(resourceName: "berita 1"), title: "Daun Saga")
-        let material4 = Material(image: #imageLiteral(resourceName: "Jahe merah"), title: "Jahe Merah")
-        let material5 = Material(image: #imageLiteral(resourceName: "Talas"), title: "Talas")
-        
         let material1 = Material(image: #imageLiteral(resourceName: "Talas"), title: "Alang-Alang", desc: "alang-alang adalah obat canggih", khasiat: "Bikin cepat kaya", kontra: "kalo kebanyakan di pake ketagihan")
         materials.append(material1)
        
@@ -71,15 +64,21 @@ extension MaterialListScreen: UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewController = storyboard?.instantiateViewController(withIdentifier: "detailTanamanViewController") as! DetailTanamanViewController
         
-        viewController.judul = materials[indexPath.row].title
-        viewController.img = materials[indexPath.row].image
-        viewController.detail = materials[indexPath.row].desc
-        viewController.khasiat = materials[indexPath.row].khasiat
+//        viewController.judul = materials[indexPath.row].title
+//        viewController.img = materials[indexPath.row].image
+//        viewController.detail = materials[indexPath.row].desc
+//        viewController.khasiat = materials[indexPath.row].khasiat
+        
+                viewController.judul = materials[indexPath.row].title
+                viewController.img = materials[indexPath.row].image
+                viewController.detail = materials[indexPath.row].desc
+                viewController.khasiat = materials[indexPath.row].khasiat
+
         
         self.navigationController?.pushViewController(viewController, animated: true)
 //        self.navigationController?.present(viewController, animated: true, completion: nil)
         
-        print(self.navigationController?.pushViewController(viewController, animated: true))
+//        print(self.navigationController?.pushViewController(viewController, animated: true))
     }
     
     

@@ -51,7 +51,7 @@ class TestingViewController: UIViewController, UICollectionViewDataSource, UICol
             viewController.img = UIImage(named: imgArray[indexPath.row])
             viewController.detail = notesArray[indexPath.row]
             viewController.khasiat = khasiatArray[indexPath.row]
-            viewController.kontra = kontraArray[indexPath.row]
+//            viewController.kontra = kontraArray[indexPath.row]
             
             self.navigationController?.pushViewController(viewController, animated: true)
             

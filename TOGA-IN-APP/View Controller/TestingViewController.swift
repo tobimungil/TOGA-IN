@@ -38,6 +38,17 @@ class TestingViewController: UIViewController, UICollectionViewDataSource, UICol
         }
     }
     
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let viewController = storyboard?.instantiateViewController(withIdentifier: "detailTanamanViewController") as! DetailTanamanViewController
+        
+        viewController.judul = lblArray[indexPath.row]
+        viewController.img = "thumbnailTanaman"
+        viewController.detail = "ini detail askdnaksd asdknaskdnas dkasndams dkmasd a sdkma sdmasdmnaskd asmdnkams dmans dma sdkm asmd  akmsd ams dma sdma sdm asmd akmsd ams dkmas dma sdm asmd am s dma sdma sdm asmd amsd mas dkma sdjma sdmn askdnamsd kmasn d"
+        viewController.khasiat = "blbla"
+        
+        self.navigationController?.pushViewController(viewController, animated: true)
+    }
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         if collectionView.tag == 0 {
             return imgArray.count

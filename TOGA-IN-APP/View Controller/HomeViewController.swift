@@ -49,7 +49,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         
         let viewController = storyboard?.instantiateViewController(withIdentifier: "detailTanamanViewController") as! DetailTanamanViewController
         
-        viewController.lblJudulTanaman = namaTanamanObat
+//        viewController.lblJudulTanaman = namaTanamanObat
         
         self.navigationController?.pushViewController(viewController, animated: true)
         print("Di Tekan Index yang ke \(namaTanamanObat)")

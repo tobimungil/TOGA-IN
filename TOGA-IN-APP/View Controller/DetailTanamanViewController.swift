@@ -10,13 +10,21 @@ import UIKit
 
 class DetailTanamanViewController: UIViewController {
     @IBOutlet weak var lblJudul: UILabel!
-    var lblJudulTanaman = ""
+    @IBOutlet weak var imgTanaman: UIImageView!
+    @IBOutlet weak var lblDetail: UILabel!
+    @IBOutlet weak var lblKhasiat: UILabel!
+    
+    var judul = "", img = "", detail = "", khasiat = ""
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        lblJudul.text = lblJudulTanaman
+        lblJudul.text = judul
+        imgTanaman.image = UIImage(named: img)
+        lblDetail.text = detail
+        lblKhasiat.text = khasiat
+        
         navigationController?.navigationBar.shadowImage = UIImage()
 
         // Do any additional setup after loading the view.

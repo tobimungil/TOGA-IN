@@ -103,13 +103,13 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="1xv-Tc-8ba"/>
                                 </connections>
                             </collectionView>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="290" estimatedRowHeight="-1" sectionHeaderHeight="50" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1Zu-k3-x2z">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="290" estimatedRowHeight="-1" sectionHeaderHeight="70" sectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="1Zu-k3-x2z">
                                 <rect key="frame" x="20" y="553" width="374" height="685"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BeritaCell" id="Sze-VC-AKZ" customClass="BeritaCell" customModule="TOGA_IN_APP" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="374" height="290"/>
+                                        <rect key="frame" x="0.0" y="70" width="374" height="290"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Sze-VC-AKZ" id="uDK-5r-A2B">
                                             <rect key="frame" x="0.0" y="0.0" width="374" height="289.5"/>
@@ -241,6 +241,7 @@
                                 <connections>
                                     <outlet property="dataSource" destination="0fj-Ia-feg" id="nLl-oS-SkT"/>
                                     <outlet property="delegate" destination="0fj-Ia-feg" id="SkS-mN-UeG"/>
+                                    <outlet property="prefetchDataSource" destination="0fj-Ia-feg" id="p3f-Hx-rtf"/>
                                 </connections>
                             </tableView>
                             <searchBar contentMode="redraw" fixedFrame="YES" placeholder="Cari Material..." translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bc4-yT-7gS">
@@ -736,6 +737,7 @@
                                 <connections>
                                     <outlet property="dataSource" destination="AY3-Ui-6UP" id="6ML-rV-tR3"/>
                                     <outlet property="delegate" destination="AY3-Ui-6UP" id="T4L-X3-CxO"/>
+                                    <outlet property="prefetchDataSource" destination="AY3-Ui-6UP" id="ZNw-ii-Rfh"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -1030,14 +1032,14 @@
             <objects>
                 <viewController storyboardIdentifier="detailTanamanViewController" id="Yj7-eH-haZ" customClass="DetailTanamanViewController" customModule="TOGA_IN_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="q28-Qw-6XZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="1182"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DEI-1z-6ip">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="1182"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1236"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ol8-3T-Q1J">
-                                        <rect key="frame" x="0.0" y="42" width="414" height="1140"/>
+                                        <rect key="frame" x="0.0" y="42" width="414" height="1194"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cQZ-Q1-NUw">
                                                 <rect key="frame" x="20" y="8" width="375" height="344"/>
@@ -1086,7 +1088,7 @@
                                                 <color key="backgroundColor" red="0.87162912436548223" green="0.87162912436548223" blue="0.87162912436548223" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yho-yh-dhX">
-                                                <rect key="frame" x="78" y="907" width="258" height="59"/>
+                                                <rect key="frame" x="78" y="1081" width="258" height="59"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" red="0.46287983659999998" green="0.78018039459999999" blue="0.47838199139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
@@ -1094,6 +1096,21 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                             </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kontradiksi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Se8-Cy-9Ci">
+                                                <rect key="frame" x="20" y="895" width="143" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4i9-Ia-LYQ">
+                                                <rect key="frame" x="20" y="937" width="352" height="97"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Belum ada literatur yang menyebutkan adanya kontradiksi maupun efek samping.Dianjurkan untuk tidak mengonsumsi dengan dosis yang berlebihan.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -1118,12 +1135,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jjs-zD-PFu"/>
                     </view>
-                    <size key="freeformSize" width="414" height="1182"/>
+                    <size key="freeformSize" width="414" height="1300"/>
                     <connections>
                         <outlet property="imgTanaman" destination="cQZ-Q1-NUw" id="vrO-SE-CRa"/>
                         <outlet property="lblDetail" destination="lWq-cU-1gV" id="fLP-PQ-kF3"/>
                         <outlet property="lblJudul" destination="Etm-8L-5JD" id="h41-cm-egf"/>
                         <outlet property="lblKhasiat" destination="nlz-MX-U73" id="303-b4-M1T"/>
+                        <outlet property="lblKontra" destination="4i9-Ia-LYQ" id="SkI-lA-nbj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RKu-VK-PPa" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1421,7 +1439,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IF1-Wf-J5u" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3539" y="2162"/>
+            <point key="canvasLocation" x="3538" y="2320"/>
         </scene>
         <!--Beranda-->
         <scene sceneID="8MH-89-OVp">
@@ -1833,6 +1851,129 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uma-O8-oIv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4267" y="1022"/>
+        </scene>
+        <!--Detail Material-->
+        <scene sceneID="NFz-w4-86V">
+            <objects>
+                <viewController storyboardIdentifier="detailMaterial" id="s1a-8k-kFb" customClass="detailMaterial" customModule="TOGA_IN_APP" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HzI-9Y-paA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k8t-Rd-bhq">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1236"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EbQ-RC-r8b">
+                                        <rect key="frame" x="0.0" y="42" width="414" height="1194"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yhe-Xh-4g4">
+                                                <rect key="frame" x="20" y="8" width="375" height="344"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Alang-alang" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OEK-8y-edV">
+                                                <rect key="frame" x="20" y="371" width="156" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B57-w7-fQD">
+                                                <rect key="frame" x="20" y="416" width="375" height="177"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Alang-alang yang dikonsumsi memiliki rasa sejuk, sama seperti saat kita mengonsumsi semangka atau timun. Berbagai kandungan di dalamnya membentuk sifat antipiretik yang berfungsi untuk menurunkan panas. Alang-alang pun memiliki sifat diuretik yang dapat meluruhkan kemih serta menghilangkan rasa haus.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pVz-em-rLL">
+                                                <rect key="frame" x="17" y="615" width="381" height="254"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Khasiat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSZ-ji-uq7">
+                                                        <rect key="frame" x="21" y="8" width="96" height="34"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LNr-2N-p93">
+                                                        <rect key="frame" x="21" y="41" width="351" height="177"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <string key="text">1. Alang-alang sebagai obat panas dalam
+2. Alang-alang sebagai obat mimisan
+3. Alang-alang sebagai obat sakit ginjal
+4. Alang-alang sebagai obat kencing darah,     	kencing manis, dan muntah darah
+5. Berbagai manfaat lain dari alang-alang
+</string>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" red="0.87162912439999995" green="0.87162912439999995" blue="0.87162912439999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZdC-3P-055">
+                                                <rect key="frame" x="78" y="1081" width="258" height="59"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <color key="backgroundColor" red="0.46287983659999998" green="0.78018039459999999" blue="0.47838199139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                <state key="normal" title="Temukan Dalam Resep">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Kontradiksi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J92-XK-NuE">
+                                                <rect key="frame" x="20" y="895" width="143" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uNZ-a5-rgz">
+                                                <rect key="frame" x="20" y="937" width="352" height="97"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Belum ada literatur yang menyebutkan adanya kontradiksi maupun efek samping.Dianjurkan untuk tidak mengonsumsi dengan dosis yang berlebihan.</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1008" id="Yif-7f-Cya"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="EbQ-RC-r8b" secondAttribute="bottom" constant="54" id="XKP-em-u6C"/>
+                                    <constraint firstItem="EbQ-RC-r8b" firstAttribute="top" secondItem="k8t-Rd-bhq" secondAttribute="top" constant="42" id="ktv-fe-hw3"/>
+                                    <constraint firstAttribute="trailing" secondItem="EbQ-RC-r8b" secondAttribute="trailing" id="nIt-gA-PVo"/>
+                                    <constraint firstItem="EbQ-RC-r8b" firstAttribute="leading" secondItem="k8t-Rd-bhq" secondAttribute="leading" id="xa7-QL-VKW"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="k8t-Rd-bhq" firstAttribute="leading" secondItem="VfI-h6-4V7" secondAttribute="leading" id="7bv-3b-l51"/>
+                            <constraint firstItem="k8t-Rd-bhq" firstAttribute="trailing" secondItem="VfI-h6-4V7" secondAttribute="trailing" id="ERE-WJ-jtF"/>
+                            <constraint firstItem="k8t-Rd-bhq" firstAttribute="top" secondItem="VfI-h6-4V7" secondAttribute="top" constant="42" id="JlT-zj-Onm"/>
+                            <constraint firstItem="VfI-h6-4V7" firstAttribute="bottom" secondItem="k8t-Rd-bhq" secondAttribute="bottom" constant="54" id="eMS-q5-jyk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VfI-h6-4V7"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="1300"/>
+                    <connections>
+                        <outlet property="imgTanaman" destination="yhe-Xh-4g4" id="NbU-Oo-zva"/>
+                        <outlet property="lblDeskripsi" destination="B57-w7-fQD" id="LXN-1o-hrr"/>
+                        <outlet property="lblDetail" destination="B57-w7-fQD" id="MvE-gU-Lxw"/>
+                        <outlet property="lblJudul" destination="OEK-8y-edV" id="75d-Vq-Rep"/>
+                        <outlet property="lblKhasiat" destination="LNr-2N-p93" id="JPN-UQ-uXX"/>
+                        <outlet property="lblKontra" destination="uNZ-a5-rgz" id="AXN-eg-zBb"/>
+                        <outlet property="lblimage" destination="yhe-Xh-4g4" id="u7j-KP-Fq8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cHM-9h-9w7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5116" y="1081"/>
         </scene>
     </scenes>
     <resources>

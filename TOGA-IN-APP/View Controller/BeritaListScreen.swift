@@ -92,6 +92,8 @@ extension BeritaListScreen: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewController = storyboard?.instantiateViewController(withIdentifier: "Jahe") as! PassingDataViewController
         
+        
+        
         viewController.name = "BERITA"
         
         self.navigationController?.pushViewController(viewController, animated: true)

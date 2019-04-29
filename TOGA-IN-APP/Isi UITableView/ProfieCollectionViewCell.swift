@@ -11,4 +11,8 @@ import UIKit
 class ProfieCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var cell: UIView!
+    @IBOutlet weak var favoriteImage: UIImageView!
+    @IBOutlet weak var favoriteLabel: UILabel!
+    
+
 }

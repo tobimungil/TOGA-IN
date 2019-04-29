@@ -761,7 +761,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GBm-F7-bbR" userLabel="Profile">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="681"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="816"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tzx-Yz-fhH">
@@ -842,32 +842,63 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EcB-bJ-7D6">
-                                                <rect key="frame" x="20" y="463" width="374" height="124"/>
+                                                <rect key="frame" x="20" y="463" width="374" height="221"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="t0Q-hB-uQy">
-                                                    <size key="itemSize" width="171" height="122"/>
+                                                    <size key="itemSize" width="188" height="161"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProfileCollectionViewCell" id="eLR-nF-3Pj" customClass="ProfieCollectionViewCell" customModule="TOGA_IN_APP" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="1" width="171" height="122"/>
+                                                        <rect key="frame" x="0.0" y="30" width="188" height="161"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                            <rect key="frame" x="0.0" y="0.0" width="171" height="122"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="188" height="161"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vsk-Ud-CxP">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="171" height="122"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="188" height="161"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <color key="backgroundColor" red="0.46286821369999998" green="0.77968555689999997" blue="0.47838211060000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PYb-Pd-sWr">
+                                                                            <rect key="frame" x="8" y="8" width="172" height="145"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                    <integer key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </imageView>
+                                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZY-l5-dWb">
+                                                                            <rect key="frame" x="8" y="130" width="172" height="23"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAg-Vj-KD5">
+                                                                                    <rect key="frame" x="6" y="1" width="161" height="21"/>
+                                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                    <userDefinedRuntimeAttributes>
+                                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                            <integer key="value" value="5"/>
+                                                                                        </userDefinedRuntimeAttribute>
+                                                                                    </userDefinedRuntimeAttributes>
+                                                                                </label>
+                                                                            </subviews>
+                                                                            <color key="backgroundColor" red="0.46286821369999998" green="0.77968555689999997" blue="0.47838211060000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        </view>
+                                                                    </subviews>
                                                                 </view>
                                                             </subviews>
                                                         </view>
                                                         <connections>
                                                             <outlet property="cell" destination="vsk-Ud-CxP" id="2gh-d6-lr9"/>
+                                                            <outlet property="favoriteImage" destination="PYb-Pd-sWr" id="QBe-Gw-ogq"/>
+                                                            <outlet property="favoriteLabel" destination="eAg-Vj-KD5" id="xR3-FN-iou"/>
                                                         </connections>
                                                     </collectionViewCell>
                                                 </cells>
@@ -974,7 +1005,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.46287983659999998" green="0.78018039459999999" blue="0.47838199139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.46286821369999998" green="0.77968555689999997" blue="0.47838211060000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <viewLayoutGuide key="safeArea" id="AUT-Bj-JwM"/>
                             </view>
                         </subviews>
@@ -1858,8 +1889,9 @@
         <image name="tombolBack" width="19" height="31"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="veT-zp-zps"/>
         <segue reference="ckb-e5-ka8"/>
         <segue reference="bNd-FI-miF"/>
-        <segue reference="mHI-Pn-lLY"/>
+        <segue reference="hgB-WS-XKd"/>
     </inferredMetricsTieBreakers>
 </document>

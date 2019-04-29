@@ -26,16 +26,24 @@ class AddResepViewController: UIViewController {
         
     }
     
-    public func insertNewResepThumbnail() -> [Resep]{
+    public func insertNewResepThumbnail(){
         
        
-        reseps.append(Resep(image: #imageLiteral(resourceName: "dummyImage"), title: judulField.text!, contributor: "Charlie Chaplin", ratingAsli: "0", bintang: #imageLiteral(resourceName: "Hatipreview")))
+        reseps.append(Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Tews", contributor: "Charlie Chaplin", ratingAsli: "0", bintang: #imageLiteral(resourceName: "Hatipreview")))
         
-        return reseps
+        let ResepListScreen = self.navigationController?.topViewController as? ResepListScreen
+        
+        let indexPath = IndexPath(row: reseps.count - 1, section: 0)
+        ResepListScreen?.tableView?.beginUpdates()
+        ResepListScreen?.tableView?.insertRows(at: [indexPath], with: .automatic)
+        ResepListScreen?.tableView?.endUpdates()
+        ResepListScreen?.tableView?.reloadData()
+        
     }
 
     @IBAction func kirimPressed(_ sender: UIButton) {
         insertNewResepThumbnail()
+        print(judulField.text!)
     }
     
 }

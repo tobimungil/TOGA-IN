@@ -36,18 +36,18 @@ class ResepListScreen: UIViewController {
         let resep2 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Obat Panas Dalam", contributor: "Ricardo Milos", ratingAsli: "109", bintang: #imageLiteral(resourceName: "Hatipreview"))
         let resep3 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Racikan Pilek", contributor: "Jonathan Chris", ratingAsli: "4", bintang: #imageLiteral(resourceName: "Hatipreview"))
         let resep4 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Obat Batuk Berdahak", contributor: "Gachi Muchi", ratingAsli: "52", bintang: #imageLiteral(resourceName: "Hatipreview"))
-        let resep5 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Obat Sakit Tenggorokan Alami", contributor: "Charlie Chaplin", ratingAsli: "18", bintang: #imageLiteral(resourceName: "Hatipreview"))
-        let resep6 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Obat Flu Ringan", contributor: "Huey Keith", ratingAsli: "2", bintang: #imageLiteral(resourceName: "Hatipreview"))
-        let resep7 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Obat Masuk Angin Alami", contributor: "Charlie Chaplin", ratingAsli: "18", bintang: #imageLiteral(resourceName: "Hatipreview"))
+//        let resep5 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Obat Sakit Tenggorokan Alami", contributor: "Charlie Chaplin", ratingAsli: "18", bintang: #imageLiteral(resourceName: "Hatipreview"))
+//        let resep6 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Obat Flu Ringan", contributor: "Huey Keith", ratingAsli: "2", bintang: #imageLiteral(resourceName: "Hatipreview"))
+//        let resep7 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Obat Masuk Angin Alami", contributor: "Charlie Chaplin", ratingAsli: "18", bintang: #imageLiteral(resourceName: "Hatipreview"))
         
         
         reseps.append(resep1)
         reseps.append(resep2)
         reseps.append(resep3)
         reseps.append(resep4)
-        reseps.append(resep5)
-        reseps.append(resep6)
-        reseps.append(resep7)
+//        reseps.append(resep5)
+//        reseps.append(resep6)
+//        reseps.append(resep7)
         
         searchResep = reseps
         

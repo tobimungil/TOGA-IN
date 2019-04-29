@@ -9,3 +9,7 @@
 import Foundation
 
 var isLogin = false
+var arrPass: [String] = ["admin"]
+var arrId: [String] = ["admin"]
+var arrName: [String] = ["Administrator"]
+var index: Int?

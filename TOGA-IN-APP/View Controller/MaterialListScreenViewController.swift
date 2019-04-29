@@ -26,6 +26,10 @@ class MaterialListScreen: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.topItem?.title = "Material"
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        
         materials = createArray()
         
         
@@ -64,16 +68,10 @@ extension MaterialListScreen: UITableViewDataSource,UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewController = storyboard?.instantiateViewController(withIdentifier: "detailTanamanViewController") as! DetailTanamanViewController
         
-//        viewController.judul = materials[indexPath.row].title
-//        viewController.img = materials[indexPath.row].image
-//        viewController.detail = materials[indexPath.row].desc
-//        viewController.khasiat = materials[indexPath.row].khasiat
-        
-                viewController.judul = materials[indexPath.row].title
-                viewController.img = materials[indexPath.row].image
-                viewController.detail = materials[indexPath.row].desc
-                viewController.khasiat = materials[indexPath.row].khasiat
-
+        viewController.judul = materials[indexPath.row].title
+        viewController.img = materials[indexPath.row].image
+        viewController.detail = materials[indexPath.row].desc
+        viewController.khasiat = materials[indexPath.row].khasiat
         
         self.navigationController?.pushViewController(viewController, animated: true)
 //        self.navigationController?.present(viewController, animated: true, completion: nil)

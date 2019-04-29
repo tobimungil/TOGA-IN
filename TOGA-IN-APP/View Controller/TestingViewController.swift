@@ -16,7 +16,8 @@ class TestingViewController: UIViewController, UICollectionViewDataSource, UICol
     let khasiatArray = ["- Alang-alang sebagai obat untuk menyuburkan rambut\n- Alang-alang sebagai obat mimisan\n- Alang-alang sebagai obat peluruh kencing\n- Alang-alang sebagai obat peluruh kencing", "- Asem Jawa membantu melancarkan peredaran darah\n- Asem jawa untuk melancarkan ASI\n- Asem jawa untuk sebagai obat batuk\n- Asem jawa sebagai obat panas dalam", "- Tanaman Saga sebagai obat sariawan\n-Tanaman Saga sebagai obat tetes mata", "- Jahe merah sebagai obat sakit kepala karena kedinginan\n- Jahe merah sebagai meredakan perut mulas\n- Jahe merah sebagai meredakan perut mulas ", "- Umbi talas sebagai obat untuk maag\n- Umbi Talas sebagai obat BAB berdarah\n- Daun tanaman talas untuk membalut luka"]
     
     let imgArray2 = ["thumbnailBerita", "thumbnailBerita", "thumbnailBerita"]
-    let lblArray2 = ["Judul 1", "Judul 2", "Judul 3"]
+    let lblArray2 = ["4 Tanaman Obat Mudah Didapat Ini Ampuh Sembuhkan Penyakit", "Jus Pahit yang Dapat Menurunkan Kadar Gula", "Kolaborasi POKTAN dan KKN Undip Tingkatkan Pemanfaatan Tanaman Obat Keluarga"]
+    let urlArray2 = ["https://www.liputan6.com/citizen6/read/3918523/4-jenis-tanaman-obat-yang-bisa-ditanam-di-pekarangan-rumah-dan-manfaatnya", "https://www.cnnindonesia.com/gaya-hidup/20190124115546-255-363429/jus-pahit-penurun-kadar-gula-darah", "https://www.kompasiana.com/nadiaa/5c73afedc112fe501c76ac22/kolaborasi-poktan-dan-kkn-undip-tingkatkan-pemanfaatan-tanaman-obat-keluarga"]
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
@@ -43,12 +44,17 @@ class TestingViewController: UIViewController, UICollectionViewDataSource, UICol
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let viewController = storyboard?.instantiateViewController(withIdentifier: "detailTanamanViewController") as! DetailTanamanViewController
         
-        viewController.judul = lblArray[indexPath.row]
-        viewController.img = "thumbnailTanaman"
-        viewController.detail = notesArray[indexPath.row]
-        viewController.khasiat = khasiatArray[indexPath.row]
-        
-        self.navigationController?.pushViewController(viewController, animated: true)
+        if collectionView.tag == 0 {
+            viewController.judul = lblArray[indexPath.row]
+            viewController.img = "thumbnailTanaman"
+            viewController.detail = notesArray[indexPath.row]
+            viewController.khasiat = khasiatArray[indexPath.row]
+            
+            self.navigationController?.pushViewController(viewController, animated: true)
+        } else {
+            guard let url = URL(string: urlArray2[indexPath.row]) else { return }
+            UIApplication.shared.open(url)
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

@@ -11,24 +11,52 @@ import UIKit
 class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet weak var loginView: UIView!
     @IBOutlet weak var profileView: UIView!
-    @IBOutlet weak var footerView: UIView!
+//    @IBOutlet weak var footerView: UIView!
+    @IBOutlet weak var txtId: UITextField!
+    @IBOutlet weak var txtPass: UITextField!
+    @IBOutlet weak var lblWarning: UILabel!
     
     var namaTanaman: [String] = ["Jahe","Temulawak","Cabe","Pete","Jengkol"]
     
+    @IBAction func btnMasukPress(_ sender: UIButton) {
+        
+        if arrId.contains(txtId.text ?? "") {
+            let index = arrId.index(of: txtId.text!)
+            if txtPass.text == arrPass[index!] {
+                isLogin = true
+                lblWarning.isHidden = true
+                
+                profileView.isHidden = false
+                navigationController?.navigationBar.topItem?.title = "Profile"
+                self.tabBarController?.tabBar.isHidden = false
+                //            footerView.isHidden = true
+                loginView.isHidden = true
+            } else {
+                lblWarning.isHidden = false
+                lblWarning.text = "Password anda salah"
+            }
+        } else {
+            lblWarning.isHidden = false
+            lblWarning.text = "ID tidak ditemukan"
+        }
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        lblWarning.isHidden = true
         
         if isLogin {
             profileView.isHidden = false
             navigationController?.navigationBar.topItem?.title = "Profile"
             self.tabBarController?.tabBar.isHidden = false
-            footerView.isHidden = true
+//            footerView.isHidden = true
             loginView.isHidden = true
         } else {
             profileView.isHidden = true
             navigationController?.navigationBar.topItem?.title = ""
             self.tabBarController?.tabBar.isHidden = true
-            footerView.isHidden = true
+//            footerView.isHidden = true
             loginView.isHidden = false
         }
         

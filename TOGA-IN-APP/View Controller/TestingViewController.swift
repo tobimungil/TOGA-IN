@@ -11,7 +11,9 @@ import UIKit
 class TestingViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate, UITableViewDelegate, UITableViewDataSource {
     
     let imgArray = ["thumbnailTanaman", "thumbnailTanaman", "thumbnailTanaman", "thumbnailTanaman"]
-    let lblArray = ["Jahe", "Sirih", "Bawang", "Lemon"]
+    let lblArray = ["Alang-alang", "Asem Jawa", "Saga", "Jahe Merah", "Talas"]
+    let notesArray = ["Alang-alang yang dikonsumsi memiliki rasa sejuk, sama seperti saat kita mengonsumsi semangka atau timun. Berbagai kandungan di dalamnya membentuk sifat antipiretik yang berfungsi untuk menurunkan panas. Alang-alang pun memiliki sifat diuretik yang dapat meluruhkan kemih serta menghilangkan rasa haus.", "Asam menjadi buah yang umumnya digunakan sebagai bumbu dapur. Selain fungsi tersebut, asam pun bisa kamu konsumsi dalam bentuk buah segar. Kandungan berbagai macam vitamin di dalamnya termasuk vitamin B, vitamin C, zat antioksidan, beta karoten, dan mineral menyimpan banyak manfaat sehat untuk tubuhmu.", "Merupakan tanaman atau tumbuan liar yang sangat mudah di temui di area hutan-hutan atau ladang-ladang banyak juga tanaman ini di tanam di area sekitar rumah karena khasiat daun saga untuk kesehatan.", "Jahe merah merupakan tanaman yang hampir mirip dengan kunyit, tanaman ini biasanya di jadikan sebagai rempah-rempah yang sudah di kenal di seluruh belahan dunia. Jahe merah juga memiliki banyak manfaat bagi manusia, baik itu di konsumsi untuk anak-anak bahkan sampai orang dewasa.", "Talas sangat identik sebagai oleh-oleh khas Kota Bogor.Talas adalah jenis umbi-umbian yang memiliki kesamaan dengan kentang. Tanaman ini hanya tumbuh di beberapa negara, biasanya di negara tropis di Asia."]
+    let khasiatArray = ["- Alang-alang sebagai obat untuk menyuburkan rambut\n- Alang-alang sebagai obat mimisan\n- Alang-alang sebagai obat peluruh kencing\n- Alang-alang sebagai obat peluruh kencing", "- Asem Jawa membantu melancarkan peredaran darah\n- Asem jawa untuk melancarkan ASI\n- Asem jawa untuk sebagai obat batuk\n- Asem jawa sebagai obat panas dalam", "- Tanaman Saga sebagai obat sariawan\n-Tanaman Saga sebagai obat tetes mata", "- Jahe merah sebagai obat sakit kepala karena kedinginan\n- Jahe merah sebagai meredakan perut mulas\n- Jahe merah sebagai meredakan perut mulas ", "- Umbi talas sebagai obat untuk maag\n- Umbi Talas sebagai obat BAB berdarah\n- Daun tanaman talas untuk membalut luka"]
     
     let imgArray2 = ["thumbnailBerita", "thumbnailBerita", "thumbnailBerita"]
     let lblArray2 = ["Judul 1", "Judul 2", "Judul 3"]
@@ -32,7 +34,7 @@ class TestingViewController: UIViewController, UICollectionViewDataSource, UICol
             let cell = tableView.dequeueReusableCell(withIdentifier: "BeritaTableViewCell", for: indexPath) as! BeritaTableViewCell
             cell.clCollectionView.delegate = self
             cell.clCollectionView.dataSource = self
-                cell.clCollectionView.tag = 1
+            cell.clCollectionView.tag = 1
             
             return cell
         }
@@ -43,8 +45,8 @@ class TestingViewController: UIViewController, UICollectionViewDataSource, UICol
         
         viewController.judul = lblArray[indexPath.row]
         viewController.img = "thumbnailTanaman"
-        viewController.detail = "ini detail askdnaksd asdknaskdnas dkasndams dkmasd a sdkma sdmasdmnaskd asmdnkams dmans dma sdkm asmd  akmsd ams dma sdma sdm asmd akmsd ams dkmas dma sdm asmd am s dma sdma sdm asmd amsd mas dkma sdjma sdmn askdnamsd kmasn d"
-        viewController.khasiat = "blbla"
+        viewController.detail = notesArray[indexPath.row]
+        viewController.khasiat = khasiatArray[indexPath.row]
         
         self.navigationController?.pushViewController(viewController, animated: true)
     }
@@ -75,22 +77,23 @@ class TestingViewController: UIViewController, UICollectionViewDataSource, UICol
         }
     }
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
-
+    
     /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+     // MARK: - Navigation
+     
+     // In a storyboard-based application, you will often want to do a little preparation before navigation
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destination.
+     // Pass the selected object to the new view controller.
+     }
+     */
+    
 }
+

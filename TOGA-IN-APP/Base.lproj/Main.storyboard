@@ -440,7 +440,7 @@
         <!--Register-->
         <scene sceneID="4EE-Kg-PmR">
             <objects>
-                <viewController id="2Ys-Vf-QPT" userLabel="Register" sceneMemberID="viewController">
+                <viewController id="2Ys-Vf-QPT" userLabel="Register" customClass="RegisterViewController" customModule="TOGA_IN_APP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nLi-MA-BgO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -495,7 +495,7 @@
                                 <rect key="frame" x="25" y="429" width="369" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Konfirmasi Sandi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jPG-TD-LgR">
                                 <rect key="frame" x="30" y="467" width="369" height="55"/>
@@ -508,7 +508,7 @@
                                 <rect key="frame" x="25" y="512" width="369" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="19"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v9e-jw-yPz">
                                 <rect key="frame" x="16" y="580" width="382" height="65"/>
@@ -518,6 +518,9 @@
                                 <state key="normal" title="Daftar">
                                     <color key="titleColor" red="0.9686403871" green="0.9686041474" blue="0.96862870450000005" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="RegisterButtonPress:" destination="2Ys-Vf-QPT" eventType="touchUpInside" id="jHJ-9H-45k"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Registrasi Pengguna" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9kM-Nl-qad">
                                 <rect key="frame" x="25" y="106" width="158" height="20"/>
@@ -565,22 +568,8 @@
                                 <color key="textColor" red="1" green="0.1528853778" blue="0.21882922799999999" alpha="0.70309641239999998" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sandi tidak cocok!" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hp7-xZ-4hu">
-                                <rect key="frame" x="318" y="411" width="76" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="8"/>
-                                <color key="textColor" red="1" green="0.1528853778" blue="0.21882922799999999" alpha="0.70309641239999998" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Sandi tidak cocok!" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGL-vg-DU9">
                                 <rect key="frame" x="318" y="494" width="76" height="10"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="8"/>
-                                <color key="textColor" red="1" green="0.1528853778" blue="0.21882922799999999" alpha="0.70309641239999998" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ID harus memiliki 6 karakter atau lebih!" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cib-xJ-sgw">
-                                <rect key="frame" x="232" y="245" width="162" height="10"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="8"/>
                                 <color key="textColor" red="1" green="0.1528853778" blue="0.21882922799999999" alpha="0.70309641239999998" colorSpace="custom" customColorSpace="displayP3"/>
@@ -591,6 +580,16 @@
                         <viewLayoutGuide key="safeArea" id="qv2-bo-whU"/>
                     </view>
                     <navigationItem key="navigationItem" id="nQU-lm-wbS"/>
+                    <connections>
+                        <outlet property="lblWarn1" destination="WNJ-5d-n45" id="85t-Tm-ANC"/>
+                        <outlet property="lblWarn2" destination="SJD-LK-YOg" id="TGa-el-GLy"/>
+                        <outlet property="lblWarn3" destination="wGL-vg-DU9" id="5Mt-FG-BQC"/>
+                        <outlet property="txtConf" destination="PJg-RZ-JIg" id="XPo-ig-t8V"/>
+                        <outlet property="txtEmail" destination="orr-U5-kPu" id="Uwx-c8-BGZ"/>
+                        <outlet property="txtID" destination="dwg-C3-RKa" id="Uxn-eS-MyW"/>
+                        <outlet property="txtNama" destination="QKl-vr-XcT" id="r42-7X-Mr4"/>
+                        <outlet property="txtPass" destination="VJs-N5-gyu" id="EPB-1Y-0el"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lPj-Nl-Yf9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -763,7 +762,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GBm-F7-bbR" userLabel="Profile">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="681"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="816"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tzx-Yz-fhH">
@@ -844,32 +843,63 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="EcB-bJ-7D6">
-                                                <rect key="frame" x="20" y="463" width="374" height="124"/>
+                                                <rect key="frame" x="20" y="463" width="374" height="221"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="t0Q-hB-uQy">
-                                                    <size key="itemSize" width="171" height="122"/>
+                                                    <size key="itemSize" width="188" height="161"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProfileCollectionViewCell" id="eLR-nF-3Pj" customClass="ProfieCollectionViewCell" customModule="TOGA_IN_APP" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="1" width="171" height="122"/>
+                                                        <rect key="frame" x="0.0" y="30" width="188" height="161"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
-                                                            <rect key="frame" x="0.0" y="0.0" width="171" height="122"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="188" height="161"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vsk-Ud-CxP">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="171" height="122"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="188" height="161"/>
                                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                                    <color key="backgroundColor" red="0.46286821369999998" green="0.77968555689999997" blue="0.47838211060000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <subviews>
+                                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PYb-Pd-sWr">
+                                                                            <rect key="frame" x="8" y="8" width="172" height="145"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <userDefinedRuntimeAttributes>
+                                                                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                    <integer key="value" value="5"/>
+                                                                                </userDefinedRuntimeAttribute>
+                                                                            </userDefinedRuntimeAttributes>
+                                                                        </imageView>
+                                                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hZY-l5-dWb">
+                                                                            <rect key="frame" x="8" y="130" width="172" height="23"/>
+                                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                            <subviews>
+                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eAg-Vj-KD5">
+                                                                                    <rect key="frame" x="6" y="1" width="161" height="21"/>
+                                                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                                    <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                                    <nil key="highlightedColor"/>
+                                                                                    <userDefinedRuntimeAttributes>
+                                                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                                            <integer key="value" value="5"/>
+                                                                                        </userDefinedRuntimeAttribute>
+                                                                                    </userDefinedRuntimeAttributes>
+                                                                                </label>
+                                                                            </subviews>
+                                                                            <color key="backgroundColor" red="0.46286821369999998" green="0.77968555689999997" blue="0.47838211060000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                        </view>
+                                                                    </subviews>
                                                                 </view>
                                                             </subviews>
                                                         </view>
                                                         <connections>
                                                             <outlet property="cell" destination="vsk-Ud-CxP" id="2gh-d6-lr9"/>
+                                                            <outlet property="favoriteImage" destination="PYb-Pd-sWr" id="QBe-Gw-ogq"/>
+                                                            <outlet property="favoriteLabel" destination="eAg-Vj-KD5" id="xR3-FN-iou"/>
                                                         </connections>
                                                     </collectionViewCell>
                                                 </cells>
@@ -976,7 +1006,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.46287983659999998" green="0.78018039459999999" blue="0.47838199139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.46286821369999998" green="0.77968555689999997" blue="0.47838211060000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <viewLayoutGuide key="safeArea" id="AUT-Bj-JwM"/>
                             </view>
                         </subviews>
@@ -1999,8 +2029,9 @@
         <image name="tombolBack" width="19" height="31"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="veT-zp-zps"/>
         <segue reference="ckb-e5-ka8"/>
         <segue reference="bNd-FI-miF"/>
-        <segue reference="mHI-Pn-lLY"/>
+        <segue reference="hgB-WS-XKd"/>
     </inferredMetricsTieBreakers>
 </document>

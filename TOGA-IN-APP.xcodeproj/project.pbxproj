@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		50B2846222777FC80023835C /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50B2846122777FC80023835C /* RegisterViewController.swift */; };
 		50CAA0BF2276DC320092677A /* TanamanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CAA0BE2276DC320092677A /* TanamanTableViewCell.swift */; };
 		50CAA0C12276DC720092677A /* TanamanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CAA0C02276DC720092677A /* TanamanCollectionViewCell.swift */; };
 		50CAA0C32276DEE50092677A /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CAA0C22276DEE50092677A /* TestingViewController.swift */; };
@@ -39,6 +40,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		50B2846122777FC80023835C /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		50CAA0BE2276DC320092677A /* TanamanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanamanTableViewCell.swift; sourceTree = "<group>"; };
 		50CAA0C02276DC720092677A /* TanamanCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanamanCollectionViewCell.swift; sourceTree = "<group>"; };
 		50CAA0C22276DEE50092677A /* TestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 				C36287432276F49300FB6053 /* LoginViewController.swift */,
 				50CAA0C22276DEE50092677A /* TestingViewController.swift */,
 				5EB431E722771C02006C2798 /* AddResepViewController.swift */,
+				50B2846122777FC80023835C /* RegisterViewController.swift */,
 				5EB431E922778962006C2798 /* detailMaterial.swift */,
 			);
 			path = "View Controller";
@@ -254,6 +257,7 @@
 				5E896656227465130029EB2A /* BeritaListScreen.swift in Sources */,
 				50E6CFA12276F3A300DCF0FE /* BeritaTableViewCell.swift in Sources */,
 				5EA979E22272F9A20032B27F /* MaterialListScreenViewController.swift in Sources */,
+				50B2846222777FC80023835C /* RegisterViewController.swift in Sources */,
 				5EA979F02273EE7A0032B27F /* ResepListScreen.swift in Sources */,
 				50CAA0C32276DEE50092677A /* TestingViewController.swift in Sources */,
 				5EB431EA22778962006C2798 /* detailMaterial.swift in Sources */,

@@ -19,8 +19,6 @@
 		5EA979F02273EE7A0032B27F /* ResepListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA979EF2273EE7A0032B27F /* ResepListScreen.swift */; };
 		5EA979F22273F1120032B27F /* ResepCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA979F12273F1120032B27F /* ResepCell.swift */; };
 		5EA979F42273F2AA0032B27F /* Resep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EA979F32273F2AA0032B27F /* Resep.swift */; };
-		5ED458AE2276C70100F6544C /* TesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED458AD2276C70100F6544C /* TesViewController.swift */; };
-		5ED458B02276D51A00F6544C /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED458AF2276D51A00F6544C /* HomeTableViewCell.swift */; };
 		C34A128622756E1C005444AE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C34A128522756E1C005444AE /* LaunchScreen.storyboard */; };
 		C34A128822756F89005444AE /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A128722756F89005444AE /* ProfileViewController.swift */; };
 		C34A128A22756FB4005444AE /* ProfieCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C34A128922756FB4005444AE /* ProfieCollectionViewCell.swift */; };
@@ -44,8 +42,6 @@
 		5EA979EF2273EE7A0032B27F /* ResepListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResepListScreen.swift; sourceTree = "<group>"; };
 		5EA979F12273F1120032B27F /* ResepCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResepCell.swift; sourceTree = "<group>"; };
 		5EA979F32273F2AA0032B27F /* Resep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Resep.swift; sourceTree = "<group>"; };
-		5ED458AD2276C70100F6544C /* TesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TesViewController.swift; sourceTree = "<group>"; };
-		5ED458AF2276D51A00F6544C /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
 		C34A128522756E1C005444AE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C34A128722756F89005444AE /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		C34A128922756FB4005444AE /* ProfieCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfieCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -89,7 +85,6 @@
 				C34A128B227589B9005444AE /* PassingDataViewController.swift */,
 				50E129962275CA560009C1AE /* HomeViewController.swift */,
 				50E129982275D19C0009C1AE /* DetailTanamanViewController.swift */,
-				5ED458AD2276C70100F6544C /* TesViewController.swift */,
 			);
 			path = "View Controller";
 			sourceTree = "<group>";
@@ -102,7 +97,6 @@
 				5EA979F12273F1120032B27F /* ResepCell.swift */,
 				C34A128922756FB4005444AE /* ProfieCollectionViewCell.swift */,
 				50E129942275C6160009C1AE /* HomeCollectionViewCell.swift */,
-				5ED458AF2276D51A00F6544C /* HomeTableViewCell.swift */,
 			);
 			path = "Isi UITableView";
 			sourceTree = "<group>";
@@ -216,11 +210,9 @@
 				5EA979E4227302200032B27F /* MaterialCell.swift in Sources */,
 				C397B1B22271CA2E00F7F7D0 /* TOGA_IN_APP.xcdatamodeld in Sources */,
 				50E129952275C6160009C1AE /* HomeCollectionViewCell.swift in Sources */,
-				5ED458B02276D51A00F6544C /* HomeTableViewCell.swift in Sources */,
 				C34A128A22756FB4005444AE /* ProfieCollectionViewCell.swift in Sources */,
 				5E89665A2274665B0029EB2A /* Berita.swift in Sources */,
 				50E129992275D19C0009C1AE /* DetailTanamanViewController.swift in Sources */,
-				5ED458AE2276C70100F6544C /* TesViewController.swift in Sources */,
 				5E896658227465580029EB2A /* BeritaCell.swift in Sources */,
 				C34A128822756F89005444AE /* ProfileViewController.swift in Sources */,
 				C397B1AA2271CA2E00F7F7D0 /* AppDelegate.swift in Sources */,

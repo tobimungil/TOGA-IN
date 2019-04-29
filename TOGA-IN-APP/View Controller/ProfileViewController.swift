@@ -9,14 +9,31 @@
 import UIKit
 
 class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+    @IBOutlet weak var loginView: UIView!
+    @IBOutlet weak var profileView: UIView!
+    @IBOutlet weak var footerView: UIView!
     
     var namaTanaman: [String] = ["Jahe","Temulawak","Cabe","Pete","Jengkol"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if isLogin {
+            profileView.isHidden = false
+            navigationController?.navigationBar.topItem?.title = "Profile"
+            self.tabBarController?.tabBar.isHidden = false
+            footerView.isHidden = true
+            loginView.isHidden = true
+        } else {
+            profileView.isHidden = true
+            navigationController?.navigationBar.topItem?.title = ""
+            self.tabBarController?.tabBar.isHidden = true
+            footerView.isHidden = true
+            loginView.isHidden = false
+        }
+        
         navigationController?.navigationBar.shadowImage = UIImage()
-        navigationController?.navigationBar.topItem?.title = "Profile"
+        
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         
 

@@ -1197,7 +1197,7 @@
         <scene sceneID="41g-eO-rth">
             <objects>
                 <viewController id="Uhj-tY-C15" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="QyL-zi-GKs">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="QyL-zi-GKs">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -1495,23 +1495,20 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.46287983659999998" green="0.78018039459999999" blue="0.47838199139999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GVU-0r-J2B">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="300" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GVU-0r-J2B">
                                 <rect key="frame" x="0.0" y="223" width="414" height="639"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TanamanTableViewCell" rowHeight="267" id="aho-eu-my5" customClass="TanamanTableViewCell" customModule="TOGA_IN_APP" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="267"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TanamanTableViewCell" rowHeight="306" id="aho-eu-my5" customClass="TanamanTableViewCell" customModule="TOGA_IN_APP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="306"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aho-eu-my5" id="4QN-97-p2y">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="266.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="305.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sag-Zy-nEF">
-                                                    <rect key="frame" x="18" y="3" width="378" height="263"/>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sag-Zy-nEF">
+                                                    <rect key="frame" x="16" y="0.0" width="378" height="302"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="263" id="UbP-S1-4QA"/>
-                                                    </constraints>
                                                     <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="SXw-ch-ecm">
                                                         <size key="itemSize" width="171" height="242"/>
                                                         <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -1520,7 +1517,7 @@
                                                     </collectionViewFlowLayout>
                                                     <cells>
                                                         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TanamanCollectionViewCell" id="WVi-Gs-C36" customClass="TanamanCollectionViewCell" customModule="TOGA_IN_APP" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="10.5" width="171" height="242"/>
+                                                            <rect key="frame" x="0.0" y="30" width="171" height="242"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
                                                                 <rect key="frame" x="0.0" y="0.0" width="171" height="242"/>
@@ -1557,8 +1554,8 @@
                                                         <outlet property="delegate" destination="JdL-0q-mtK" id="Jlq-g4-4Am"/>
                                                     </connections>
                                                 </collectionView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tanaman Obat Keluarga" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="67Q-mC-IIj">
-                                                    <rect key="frame" x="16" y="-26" width="180" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Berita Terbaru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lh3-OQ-WiC">
+                                                    <rect key="frame" x="16" y="7" width="180" height="20"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                                     <nil key="textColor"/>
@@ -1573,7 +1570,94 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="clCollectionView" destination="sag-Zy-nEF" id="ErJ-J4-KyK"/>
+                                            <outlet property="clCollectionView" destination="sag-Zy-nEF" id="tHg-1P-DI5"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="BeritaTableViewCell" rowHeight="267" id="uqD-07-Jj4" customClass="BeritaTableViewCell" customModule="TOGA_IN_APP" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="334" width="414" height="267"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="uqD-07-Jj4" id="RhK-ms-Jpm">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="266.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tanaman Obat Keluarga" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4zR-TR-Fli">
+                                                    <rect key="frame" x="16" y="-26" width="180" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Berita Terbaru" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EF3-WK-Es4">
+                                                    <rect key="frame" x="16" y="5" width="180" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xJO-By-ZHn">
+                                                    <rect key="frame" x="0.0" y="25" width="414" height="241.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Hew-DA-qax">
+                                                        <size key="itemSize" width="223" height="187"/>
+                                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                    </collectionViewFlowLayout>
+                                                    <cells>
+                                                        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BeritaCollectionViewCell" id="lkT-7B-yXC" customClass="BeritaCollectionViewCell" customModule="TOGA_IN_APP" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="27.5" width="223" height="187"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                                                <rect key="frame" x="0.0" y="0.0" width="223" height="187"/>
+                                                                <autoresizingMask key="autoresizingMask"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGe-0a-Lzb">
+                                                                        <rect key="frame" x="10" y="153" width="200" height="27"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="height" constant="27" id="gno-Ve-8Wv"/>
+                                                                        </constraints>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6YI-bw-zJN">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="223" height="145"/>
+                                                                    </imageView>
+                                                                </subviews>
+                                                            </view>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailingMargin" secondItem="wGe-0a-Lzb" secondAttribute="trailing" constant="-3" id="9uP-Jp-ima"/>
+                                                                <constraint firstItem="6YI-bw-zJN" firstAttribute="top" secondItem="lkT-7B-yXC" secondAttribute="top" id="JGs-02-FbU"/>
+                                                                <constraint firstAttribute="bottomMargin" secondItem="wGe-0a-Lzb" secondAttribute="bottom" constant="-27" id="LUv-OI-S3l"/>
+                                                                <constraint firstItem="wGe-0a-Lzb" firstAttribute="top" secondItem="6YI-bw-zJN" secondAttribute="bottom" constant="8" symbolic="YES" id="U4Y-kN-i4r"/>
+                                                                <constraint firstItem="6YI-bw-zJN" firstAttribute="leading" secondItem="lkT-7B-yXC" secondAttribute="leading" id="pPo-p6-qHx"/>
+                                                                <constraint firstItem="wGe-0a-Lzb" firstAttribute="leading" secondItem="lkT-7B-yXC" secondAttribute="leadingMargin" constant="-6" id="r08-Op-95C"/>
+                                                                <constraint firstAttribute="trailing" secondItem="6YI-bw-zJN" secondAttribute="trailing" id="t7X-vW-sVg"/>
+                                                            </constraints>
+                                                            <connections>
+                                                                <outlet property="imgBerita" destination="6YI-bw-zJN" id="agW-Ml-YRa"/>
+                                                                <outlet property="lblBerita" destination="wGe-0a-Lzb" id="9vx-jx-H8C"/>
+                                                            </connections>
+                                                        </collectionViewCell>
+                                                    </cells>
+                                                    <connections>
+                                                        <outlet property="dataSource" destination="JdL-0q-mtK" id="hoO-0E-e4H"/>
+                                                        <outlet property="delegate" destination="JdL-0q-mtK" id="Fsv-cA-AN0"/>
+                                                    </connections>
+                                                </collectionView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="xJO-By-ZHn" secondAttribute="bottom" id="1AG-lG-w3K"/>
+                                                <constraint firstItem="EF3-WK-Es4" firstAttribute="top" secondItem="RhK-ms-Jpm" secondAttribute="top" constant="5" id="3rq-oi-0MO"/>
+                                                <constraint firstItem="EF3-WK-Es4" firstAttribute="trailing" secondItem="4zR-TR-Fli" secondAttribute="trailing" id="4xx-1z-f1g"/>
+                                                <constraint firstAttribute="trailing" secondItem="xJO-By-ZHn" secondAttribute="trailing" id="9Sf-Vt-oTb"/>
+                                                <constraint firstItem="EF3-WK-Es4" firstAttribute="top" secondItem="4zR-TR-Fli" secondAttribute="bottom" constant="10" id="HRC-rE-6eg"/>
+                                                <constraint firstItem="xJO-By-ZHn" firstAttribute="leading" secondItem="RhK-ms-Jpm" secondAttribute="leading" id="PdY-RX-dyH"/>
+                                                <constraint firstItem="EF3-WK-Es4" firstAttribute="leading" secondItem="RhK-ms-Jpm" secondAttribute="leadingMargin" constant="-4" id="YpN-37-fdY"/>
+                                                <constraint firstItem="EF3-WK-Es4" firstAttribute="leading" secondItem="4zR-TR-Fli" secondAttribute="leading" id="bFj-hV-Gwn"/>
+                                                <constraint firstItem="xJO-By-ZHn" firstAttribute="top" secondItem="EF3-WK-Es4" secondAttribute="bottom" id="u8C-Ph-dKW"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="clCollectionView" destination="xJO-By-ZHn" id="xaw-Ea-ogg"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

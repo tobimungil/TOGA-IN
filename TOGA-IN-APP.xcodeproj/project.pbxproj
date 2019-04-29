@@ -10,9 +10,11 @@
 		50CAA0BF2276DC320092677A /* TanamanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CAA0BE2276DC320092677A /* TanamanTableViewCell.swift */; };
 		50CAA0C12276DC720092677A /* TanamanCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CAA0C02276DC720092677A /* TanamanCollectionViewCell.swift */; };
 		50CAA0C32276DEE50092677A /* TestingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CAA0C22276DEE50092677A /* TestingViewController.swift */; };
+		50CAA0C52276EC8D0092677A /* BeritaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50CAA0C42276EC8D0092677A /* BeritaCollectionViewCell.swift */; };
 		50E129952275C6160009C1AE /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E129942275C6160009C1AE /* HomeCollectionViewCell.swift */; };
 		50E129972275CA560009C1AE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E129962275CA560009C1AE /* HomeViewController.swift */; };
 		50E129992275D19C0009C1AE /* DetailTanamanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E129982275D19C0009C1AE /* DetailTanamanViewController.swift */; };
+		50E6CFA12276F3A300DCF0FE /* BeritaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E6CFA02276F3A300DCF0FE /* BeritaTableViewCell.swift */; };
 		5E896656227465130029EB2A /* BeritaListScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E896655227465130029EB2A /* BeritaListScreen.swift */; };
 		5E896658227465580029EB2A /* BeritaCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E896657227465580029EB2A /* BeritaCell.swift */; };
 		5E89665A2274665B0029EB2A /* Berita.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E8966592274665B0029EB2A /* Berita.swift */; };
@@ -36,9 +38,11 @@
 		50CAA0BE2276DC320092677A /* TanamanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanamanTableViewCell.swift; sourceTree = "<group>"; };
 		50CAA0C02276DC720092677A /* TanamanCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TanamanCollectionViewCell.swift; sourceTree = "<group>"; };
 		50CAA0C22276DEE50092677A /* TestingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestingViewController.swift; sourceTree = "<group>"; };
+		50CAA0C42276EC8D0092677A /* BeritaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaCollectionViewCell.swift; sourceTree = "<group>"; };
 		50E129942275C6160009C1AE /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		50E129962275CA560009C1AE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		50E129982275D19C0009C1AE /* DetailTanamanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailTanamanViewController.swift; sourceTree = "<group>"; };
+		50E6CFA02276F3A300DCF0FE /* BeritaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaTableViewCell.swift; sourceTree = "<group>"; };
 		5E896655227465130029EB2A /* BeritaListScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaListScreen.swift; sourceTree = "<group>"; };
 		5E896657227465580029EB2A /* BeritaCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeritaCell.swift; sourceTree = "<group>"; };
 		5E8966592274665B0029EB2A /* Berita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Berita.swift; sourceTree = "<group>"; };
@@ -105,7 +109,9 @@
 				C34A128922756FB4005444AE /* ProfieCollectionViewCell.swift */,
 				50E129942275C6160009C1AE /* HomeCollectionViewCell.swift */,
 				50CAA0BE2276DC320092677A /* TanamanTableViewCell.swift */,
+				50E6CFA02276F3A300DCF0FE /* BeritaTableViewCell.swift */,
 				50CAA0C02276DC720092677A /* TanamanCollectionViewCell.swift */,
+				50CAA0C42276EC8D0092677A /* BeritaCollectionViewCell.swift */,
 			);
 			path = "Isi UITableView";
 			sourceTree = "<group>";
@@ -221,6 +227,7 @@
 				C397B1B22271CA2E00F7F7D0 /* TOGA_IN_APP.xcdatamodeld in Sources */,
 				50E129952275C6160009C1AE /* HomeCollectionViewCell.swift in Sources */,
 				C34A128A22756FB4005444AE /* ProfieCollectionViewCell.swift in Sources */,
+				50CAA0C52276EC8D0092677A /* BeritaCollectionViewCell.swift in Sources */,
 				5E89665A2274665B0029EB2A /* Berita.swift in Sources */,
 				50CAA0BF2276DC320092677A /* TanamanTableViewCell.swift in Sources */,
 				50E129992275D19C0009C1AE /* DetailTanamanViewController.swift in Sources */,
@@ -230,6 +237,7 @@
 				50E129972275CA560009C1AE /* HomeViewController.swift in Sources */,
 				5EA979F42273F2AA0032B27F /* Resep.swift in Sources */,
 				5E896656227465130029EB2A /* BeritaListScreen.swift in Sources */,
+				50E6CFA12276F3A300DCF0FE /* BeritaTableViewCell.swift in Sources */,
 				5EA979E22272F9A20032B27F /* MaterialListScreenViewController.swift in Sources */,
 				5EA979F02273EE7A0032B27F /* ResepListScreen.swift in Sources */,
 				50CAA0C32276DEE50092677A /* TestingViewController.swift in Sources */,

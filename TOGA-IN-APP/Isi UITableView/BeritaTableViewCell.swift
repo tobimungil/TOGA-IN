@@ -1,5 +1,5 @@
 //
-//  TanamanTableViewCell.swift
+//  BeritaTableViewCell.swift
 //  TOGA-IN-APP
 //
 //  Created by Ricky Effendi on 29/04/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TanamanTableViewCell: UITableViewCell {
+class BeritaTableViewCell: UITableViewCell {
     @IBOutlet weak var clCollectionView: UICollectionView!
     
     

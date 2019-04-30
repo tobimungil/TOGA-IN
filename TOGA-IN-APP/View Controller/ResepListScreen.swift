@@ -36,9 +36,13 @@ class ResepListScreen: UIViewController {
     
     func createArray() -> [Resep]{
         
-        let resep1 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Nutrisi Rambut Alang-alang", contributor: "Charlie Chaplin", ratingAsli: "11", bintang: #imageLiteral(resourceName: "Hatipreview"), desc: "Alang-alang sebagai obat untuk menyuburkan rambut", cara: "1. Tumbuk Halus akar alang-alang\n2. Rebus sampai mendidih\n3. Basuh dikepala sampai 2 kali sehari.", materi1: "Alang-alang", materi2: "Air", materi3: "", takaran1: "20 g", takaran2: "1 gelas", takaran3: "")
-        let resep2 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Obat Demam", contributor: "Ricardo Milos", ratingAsli: "15", bintang: #imageLiteral(resourceName: "Hatipreview"), desc: "Alang-alang sebagai obat demam", cara: "1. Tumbuk Halus akar alang-alang\n2. Rebus sampai mendidih\n3. Saring air rebusan tersebut.\n4. 4. Minum selagi hangat", materi1: "Alang-alang", materi2: "Air", materi3: "", takaran1: "20 g", takaran2: "1 gelas", takaran3: "")
-        let resep3 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Nutrisi Rambut Alang-alang", contributor: "Charlie Chaplin", ratingAsli: "11", bintang: #imageLiteral(resourceName: "Hatipreview"), desc: "Alang-alang sebagai obat untuk menyuburkan rambut", cara: "1. Tumbuk Halus akar alang-alang\n2. Rebus sampai mendidih\n3. Basuh dikepala sampai 2 kali sehari.", materi1: "Alang-alang", materi2: "Air", materi3: "", takaran1: "20 g", takaran2: "1 gelas", takaran3: "")
+        let resep1 = Resep(image: #imageLiteral(resourceName: "alang alang"), title: "Nutrisi Rambut Alang-alang", contributor: "Admin", ratingAsli: "11", bintang: #imageLiteral(resourceName: "HatiKecil"), desc: "Alang-alang sebagai obat untuk menyuburkan rambut", cara: "1. Tumbuk Halus akar alang-alang\n2. Rebus sampai mendidih\n3. Basuh dikepala sampai 2 kali sehari.", materi1: "Alang-alang", materi2: "Air", materi3: "", takaran1: "20 g", takaran2: "1 gelas", takaran3: "")
+        let resep2 = Resep(image: #imageLiteral(resourceName: "alang-alang"), title: "Obat Demam", contributor: "Ricardo Milos", ratingAsli: "15", bintang: #imageLiteral(resourceName: "HatiKecil"), desc: "Alang-alang sebagai obat demam", cara: "1. Tumbuk Halus akar alang-alang\n2. Rebus sampai mendidih\n3. Saring air rebusan tersebut.\n4. 4. Minum selagi hangat", materi1: "Alang-alang", materi2: "Air", materi3: "", takaran1: "20 g", takaran2: "1 gelas", takaran3: "")
+        let resep3 = Resep(image: #imageLiteral(resourceName: "Daun Saga-1"), title: "Tanaman saga sebagai obat sariawan", contributor: "Hadi Triyadi", ratingAsli: "13", bintang: #imageLiteral(resourceName: "HatiKecil"), desc: "Daun saga dapat meredakan panas dalam dan menghilangkan sariawan", cara: "1. Keringkan daun saga selama 10 menit dibawah sinar matahari\n2. Saat agak layu, kumur sebagai obat sariawan.", materi1: "Daun Saga", materi2: "", materi3: "", takaran1: "5-10 lbr", takaran2: "", takaran3: "")
+        let resep4 = Resep(image: #imageLiteral(resourceName: "obat kecap jeruk"), title: "Obat Batuk", contributor: "Admin", ratingAsli: "12", bintang: #imageLiteral(resourceName: "HatiKecil"), desc: "Obat batuk mudah", cara: "1.Potong jeruk nipis menjadi setengah.\n2.Tuangkan kecap manis ke sendok makan.\n3.Peras  jeruk nipis ke sendok makan berisi kecap manis.\n4.Minum campuran tersebut", materi1: "Jeruk Nipis", materi2: "Kecap Manis/Madu", materi3: "", takaran1: "1 Buah", takaran2: "1 sdm", takaran3: "")
+        let resep5 = Resep(image: #imageLiteral(resourceName: "jahe"), title: "Mengobati masuk angin", contributor: "Admin", ratingAsli: "0", bintang: #imageLiteral(resourceName: "HatiKecil"), desc: "Manfaat jahe untuk menghangatkan tubuh dan menghilangkan masuk angin", cara: "1. Kupas dan iris batang serai dan Jahe merah.\n2. Rebus bersama selama  3 - 5 menit sampai berwarna kecoklatan.\n3. Saring dan tuang ke gelas sari-sarinya.\n4. Nikmati selagi hangat", materi1: "Serai", materi2: "Jahe Merah", materi3: "Air Panas", takaran1: "1 Batang", takaran2: "3-5 cm", takaran3: "Secukupnya")
+        let resep6 = Resep(image: #imageLiteral(resourceName: "Talas"), title: "Umbi Talas sebagai obat maag", contributor: "Ricky Effendi", ratingAsli: "5", bintang: #imageLiteral(resourceName: "HatiKecil"), desc: "Umbi Talas mengandung karbohidrat yang dapat menjadi pengganti nasi", cara: "1. Kupas umbi talas dan rendam serta cuci bersih getah yang ada\n2. Potong umbi talas menjadi potongan kecil\n3. Rebus umbi talas, dianjurkan untuk mengganti air saat memasaknya\n4. Nikmati  umbi talas rebus tanpa tambahan apapun", materi1: "Umbi Talas", materi2: "Air Putih", materi3: "", takaran1: "1 Buah", takaran2: "2 Gelas", takaran3: "")
+        let resep7 = Resep(image: #imageLiteral(resourceName: "akar aren"), title: "Tanaman Aren sebagai obat batu ginjal", contributor: "Admin", ratingAsli: "3", bintang: #imageLiteral(resourceName: "HatiKecil"), desc: "Tanaman Aren dapat mermanfaat untuk menghancurkan batu ginjal", cara: "1. Cuci lalu potong kecil-kecil akar muda segar\n2. Rebus dengan dua  gelas air selama 15 menit\n3. Setelah dingin, saring lalu minum 2 hari sekali.", materi1: "Akar muda Segar", materi2: "Air Putih", materi3: "", takaran1: "25 g", takaran2: "2 gelas", takaran3: "")
         
         
 //        let resep3 = Resep(image: #imageLiteral(resourceName: "DummyGede"), title: "Racikan Pilek", contributor: "Jonathan Chris", ratingAsli: "4", bintang: #imageLiteral(resourceName: "Hatipreview"))
@@ -51,10 +55,10 @@ class ResepListScreen: UIViewController {
         reseps.append(resep1)
         reseps.append(resep2)
         reseps.append(resep3)
-//        reseps.append(resep4)
-//        reseps.append(resep5)
-//        reseps.append(resep6)
-//        reseps.append(resep7)
+        reseps.append(resep4)
+        reseps.append(resep5)
+        reseps.append(resep6)
+        reseps.append(resep7)
         
         searchResep = reseps
         

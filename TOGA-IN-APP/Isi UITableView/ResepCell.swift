@@ -14,8 +14,8 @@ class ResepCell: UITableViewCell {
     @IBOutlet weak var resepNama: UILabel!
     @IBOutlet weak var resepKontributor: UILabel!
     @IBOutlet weak var ratingAsliResep: UILabel!
-
     @IBOutlet weak var bintangResep: UIImageView!
+    
     
     func setResep(resep: Resep){
         

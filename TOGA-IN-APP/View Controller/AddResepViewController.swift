@@ -29,7 +29,7 @@ class AddResepViewController: UIViewController {
     public func insertNewResepThumbnail(){
         
        
-        reseps.append(Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Tews", contributor: "Charlie Chaplin", ratingAsli: "0", bintang: #imageLiteral(resourceName: "Hatipreview")))
+//        reseps.append(Resep(image: #imageLiteral(resourceName: "dummyImage"), title: "Tews", contributor: "Charlie Chaplin", ratingAsli: "0", bintang: #imageLiteral(resourceName: "Hatipreview")))
         
         let ResepListScreen = self.navigationController?.topViewController as? ResepListScreen
         

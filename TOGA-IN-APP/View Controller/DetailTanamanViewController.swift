@@ -15,7 +15,7 @@ class DetailTanamanViewController: UIViewController {
     @IBOutlet weak var lblKhasiat: UILabel!
     @IBOutlet weak var lblKontra: UILabel!
     
-    var judul: String = "", detail: String = "", khasiat: String = ""
+    var judul: String = "", detail: String = "", khasiat: String = "", kontra: String = ""
     var img: UIImage?
     
     
@@ -26,8 +26,7 @@ class DetailTanamanViewController: UIViewController {
         imgTanaman.image = img
         lblDetail.text = detail
         lblKhasiat.text = khasiat
-//        lblKontra.text = kontra
-        //lblKontra.text = kontra
+        lblKontra.text = kontra
         
         navigationController?.navigationBar.shadowImage = UIImage()
 

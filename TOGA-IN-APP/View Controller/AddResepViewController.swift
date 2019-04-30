@@ -11,20 +11,50 @@ import UIKit
 var reseps: [Resep] = []
 
 class AddResepViewController: UIViewController {
-
-    
-    @IBOutlet weak var judulField: UITextField!
-    @IBOutlet weak var descField: UITextField!
-    @IBOutlet weak var materialField: UITextField!
-    @IBOutlet weak var takaranField: UITextField!
-    @IBOutlet weak var caraField: UITextField!
+    @IBOutlet weak var imgResep: UIImageView!
+    @IBOutlet weak var txtJudul: UITextField!
+    @IBOutlet weak var txtDesc: UITextField!
+    @IBOutlet weak var txtMaterial1: UITextField!
+    @IBOutlet weak var txtMaterial2: UITextField!
+    @IBOutlet weak var txtMaterial3: UITextField!
+    @IBOutlet weak var txtTakaran1: UITextField!
+    @IBOutlet weak var txtTakaran2: UITextField!
+    @IBOutlet weak var txtTakaran3: UITextField!
+    @IBOutlet weak var txtCara: UITextField!
+    @IBOutlet weak var btnAdd1: UIButton!
+    @IBOutlet weak var btnAdd2: UIButton!
     
     var reseps: [Resep] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        btnAdd1.isHidden = false
+        btnAdd2.isHidden = true
+        
+        txtMaterial2.isHidden = true
+        txtMaterial3.isHidden = true
+        
+        txtTakaran2.isHidden = true
+        txtTakaran3.isHidden = true
+        
     }
+    
+    @IBAction func btnAdd1Press(_ sender: Any) {
+        btnAdd1.isHidden = true
+        btnAdd2.isHidden = false
+        
+        txtMaterial2.isHidden = false
+        txtTakaran2.isHidden = false
+    }
+    
+    @IBAction func btnAdd2Press(_ sender: Any) {
+        btnAdd2.isHidden = true
+        
+        txtMaterial3.isHidden = false
+        txtTakaran3.isHidden = false
+    }
+    
     
     public func insertNewResepThumbnail(){
         
@@ -43,7 +73,7 @@ class AddResepViewController: UIViewController {
 
     @IBAction func kirimPressed(_ sender: UIButton) {
         insertNewResepThumbnail()
-        print(judulField.text!)
+//        print(judulField.text!)
     }
     
 }

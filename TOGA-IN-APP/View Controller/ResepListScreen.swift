@@ -34,6 +34,14 @@ class ResepListScreen: UIViewController {
        
     }
     
+    @IBAction func heartPress(_ sender: UIButton) {
+        if sender.currentImage == UIImage(named: "IconHati") {
+            sender.setImage(UIImage(named: "IconHati-Disabled"), for: UIControl.State.normal)
+        } else {
+            sender.setImage(UIImage(named: "IconHati"), for: UIControl.State.normal)
+        }
+    }
+    
     func createArray() -> [Resep]{
         
         let resep1 = Resep(image: #imageLiteral(resourceName: "alang alang"), title: "Nutrisi Rambut Alang-alang", contributor: "Admin", ratingAsli: "11", bintang: #imageLiteral(resourceName: "HatiKecil"), desc: "Alang-alang sebagai obat untuk menyuburkan rambut", cara: "1. Tumbuk Halus akar alang-alang\n2. Rebus sampai mendidih\n3. Basuh dikepala sampai 2 kali sehari.", materi1: "Alang-alang", materi2: "Air", materi3: "", takaran1: "20 g", takaran2: "1 gelas", takaran3: "")
@@ -86,6 +94,7 @@ extension ResepListScreen: UITableViewDataSource, UITableViewDelegate{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let viewController = storyboard?.instantiateViewController(withIdentifier: "DetailResepViewController") as! DetailResepViewController
         
+        viewController.image = reseps[indexPath.row].image
         viewController.judul = reseps[indexPath.row].title
         viewController.author = reseps[indexPath.row].contributor
         viewController.love = reseps[indexPath.row].ratingAsli
@@ -104,7 +113,7 @@ extension ResepListScreen: UITableViewDataSource, UITableViewDelegate{
     }
 }
 
-extension ResepListScreen: UISearchBarDelegate{
+extension ResepListScreen: UISearchBarDelegate, UITextFieldDelegate{
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         guard !searchText.isEmpty else {
             searchResep = reseps
@@ -117,5 +126,15 @@ extension ResepListScreen: UISearchBarDelegate{
             Resep.title.contains(searchText)
         })
         tableView.reloadData()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.resignFirstResponder()
+        
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }

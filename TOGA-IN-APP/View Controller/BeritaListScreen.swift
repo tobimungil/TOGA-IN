@@ -11,6 +11,9 @@ import UIKit
 
 class BeritaListScreen: UIViewController {
 
+    let imgArray2 = ["berita 1", "berita 2", "berita3"]
+    let lblArray2 = ["4 Tanaman Obat Mudah Didapat Ini Ampuh Sembuhkan Penyakit", "Jus Pahit yang Dapat Menurunkan Kadar Gula", "Kolaborasi POKTAN dan KKN Undip Tingkatkan Pemanfaatan Tanaman Obat Keluarga"]
+    let urlArray2 = ["https://www.liputan6.com/citizen6/read/3918523/4-jenis-tanaman-obat-yang-bisa-ditanam-di-pekarangan-rumah-dan-manfaatnya", "https://www.cnnindonesia.com/gaya-hidup/20190124115546-255-363429/jus-pahit-penurun-kadar-gula-darah", "https://www.kompasiana.com/nadiaa/5c73afedc112fe501c76ac22/kolaborasi-poktan-dan-kkn-undip-tingkatkan-pemanfaatan-tanaman-obat-keluarga"]
     
     @IBOutlet weak var tableView: UITableView!
     var sections: [String] = ["Berita Populer","Berita Terbaru"]
@@ -26,8 +29,12 @@ class BeritaListScreen: UIViewController {
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         
         beritas = createArray()
+        
+        let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: "dismissKeyboard")
 
     }
+    
+    
     
     func createArray() -> [Berita]{
 
@@ -68,7 +75,7 @@ extension BeritaListScreen: UITableViewDataSource, UITableViewDelegate{
 //       return 4
         
 //        return judulBerita.count
-        return beritas.count
+        return lblArray2.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -81,8 +88,8 @@ extension BeritaListScreen: UITableViewDataSource, UITableViewDelegate{
 //        cell.beritaJudul.text = "\(berita)"
 //        cell.beritaGambar.image = UIImage(named: "\(gberita)")
         
-        cell.beritaGambar.image = berita.image
-        cell.beritaJudul.text = berita.title
+        cell.beritaGambar.image = UIImage(named: imgArray2[indexPath.row])
+        cell.beritaJudul.text = lblArray2[indexPath.row]
         
         cell.selectionStyle = UITableViewCell.SelectionStyle.none
         
@@ -90,12 +97,16 @@ extension BeritaListScreen: UITableViewDataSource, UITableViewDelegate{
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let viewController = storyboard?.instantiateViewController(withIdentifier: "Jahe") as! PassingDataViewController
+//        let viewController = storyboard?.instantiateViewController(withIdentifier: "Jahe") as! PassingDataViewController
+//
+//
+//
+//        viewController.name = "BERITA"
+//
+//        self.navigationController?.pushViewController(viewController, animated: true)
         
+        guard let url = URL(string: urlArray2[indexPath.row]) else { return }
+        UIApplication.shared.open(url)
         
-        
-        viewController.name = "BERITA"
-        
-        self.navigationController?.pushViewController(viewController, animated: true)
     }
 }

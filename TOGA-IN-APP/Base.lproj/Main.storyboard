@@ -233,7 +233,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
-                                                            <color key="backgroundColor" red="0.90089625634517767" green="0.90089625634517767" blue="0.90089625634517767" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                            <color key="backgroundColor" red="0.96542022007574757" green="0.96542022007574757" blue="0.96542022007574757" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                                                     <integer key="value" value="5"/>
@@ -701,9 +701,12 @@
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         </imageView>
                                                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1m-jV-FtO">
-                                                            <rect key="frame" x="345" y="15" width="35" height="32"/>
+                                                            <rect key="frame" x="337" y="58" width="35" height="32"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <state key="normal" image="IconHati-Disabled"/>
+                                                            <connections>
+                                                                <action selector="heartPress:" destination="AY3-Ui-6UP" eventType="touchUpInside" id="2TI-ZM-ku0"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <userDefinedRuntimeAttributes>
@@ -1241,8 +1244,12 @@
                                     <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="akG-ob-SVz">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="DummyGede" translatesAutoresizingMaskIntoConstraints="NO" id="BtE-I5-Wfv">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="DummyGede" translatesAutoresizingMaskIntoConstraints="NO" id="BtE-I5-Wfv">
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="255"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="255" id="0m3-Z3-1lB"/>
+                                                    <constraint firstAttribute="width" constant="414" id="nXT-JX-Znb"/>
+                                                </constraints>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B1l-fS-pHR" userLabel="Button Hati">
                                                 <rect key="frame" x="351" y="17" width="44" height="44"/>
@@ -1470,6 +1477,7 @@
                     </view>
                     <size key="freeformSize" width="414" height="1450"/>
                     <connections>
+                        <outlet property="imgRESEP" destination="BtE-I5-Wfv" id="th9-yo-zUI"/>
                         <outlet property="lblAuthor" destination="ICV-Wb-CbB" id="AcF-uZ-CJq"/>
                         <outlet property="lblCara" destination="l3s-8l-HCz" id="FbG-6U-P18"/>
                         <outlet property="lblDetail" destination="rhj-4c-UrF" id="gLx-LJ-W9K"/>
@@ -2151,8 +2159,7 @@
         <image name="tombolBack" width="19" height="31"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="73O-PN-r6J"/>
-        <segue reference="Ug3-00-lIN"/>
+        <segue reference="ckb-e5-ka8"/>
         <segue reference="9K9-x1-3YV"/>
         <segue reference="mHI-Pn-lLY"/>
     </inferredMetricsTieBreakers>

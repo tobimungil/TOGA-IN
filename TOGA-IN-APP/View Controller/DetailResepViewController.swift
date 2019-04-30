@@ -20,13 +20,17 @@ class DetailResepViewController: UIViewController {
     @IBOutlet weak var lblTakaran2: UILabel!
     @IBOutlet weak var lblMateri3: UILabel!
     @IBOutlet weak var lblTakaran3: UILabel!
+    @IBOutlet weak var imgRESEP: UIImageView!
     
     var judul = "", author = "", detail = "", love = "", cara = "", materi1 = "", materi2 = "", materi3 = "", takaran1 = "", takaran2 = "", takaran3 = ""
+    var image :UIImage?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.topItem?.title = "Resep"
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         
         lblJudul.text = judul
         lblAuthor.text = author
@@ -39,6 +43,7 @@ class DetailResepViewController: UIViewController {
         lblTakaran1.text = takaran1
         lblTakaran2.text = takaran2
         lblTakaran3.text = takaran3
+        imgRESEP.image = image!
         
 
         // Do any additional setup after loading the view.

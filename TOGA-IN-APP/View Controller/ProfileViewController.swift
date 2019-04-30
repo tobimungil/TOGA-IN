@@ -8,13 +8,24 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
+class ProfileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UITextFieldDelegate {
     @IBOutlet weak var loginView: UIView!
     @IBOutlet weak var profileView: UIView!
 //    @IBOutlet weak var footerView: UIView!
     @IBOutlet weak var txtId: UITextField!
     @IBOutlet weak var txtPass: UITextField!
     @IBOutlet weak var lblWarning: UILabel!
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.resignFirstResponder()
+        
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     
     var namaTanaman: [String] = ["Jahe","Temulawak","Cabe","Pete","Jengkol"]
     var imageTanaman: [String] = ["DummyGede","DummyGede","DummyGede","DummyGede","DummyGede"]
@@ -65,8 +76,17 @@ class ProfileViewController: UIViewController, UICollectionViewDelegate, UIColle
         
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
         
+        
+        
+        
 
         // Do any additional setup after loading the view.
+    }
+    
+    
+    
+    func dismissKeyboard() {
+        view.endEditing(true)
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

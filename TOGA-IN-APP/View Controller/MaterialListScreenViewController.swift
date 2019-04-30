@@ -110,7 +110,7 @@ extension MaterialListScreen: UITableViewDataSource,UITableViewDelegate{
     
 }
 
-extension MaterialListScreen: UISearchBarDelegate{
+extension MaterialListScreen: UISearchBarDelegate, UITextFieldDelegate{
     
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
@@ -125,6 +125,16 @@ extension MaterialListScreen: UISearchBarDelegate{
             material.title.contains(searchText)
         })
         tableView.reloadData()
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.resignFirstResponder()
+        
+        return true
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
 }
 

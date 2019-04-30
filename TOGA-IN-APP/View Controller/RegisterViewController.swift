@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RegisterViewController: UIViewController {
+class RegisterViewController: UIViewController, UITextFieldDelegate{
     @IBOutlet weak var txtNama: UITextField!
     @IBOutlet weak var txtID: UITextField!
     @IBOutlet weak var txtEmail: UITextField!
@@ -47,6 +47,12 @@ class RegisterViewController: UIViewController {
             arrId.append(txtID.text!)
             arrName.append(txtNama.text!)
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.resignFirstResponder()
+        
+        return true
     }
     
     /*

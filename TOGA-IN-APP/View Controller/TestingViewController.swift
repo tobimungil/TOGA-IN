@@ -31,6 +31,7 @@ class TestingViewController: UIViewController, UICollectionViewDataSource, UICol
             cell.clCollectionView.delegate = self
             cell.clCollectionView.dataSource = self
             cell.clCollectionView.tag = 0
+            cell.selectionStyle = UITableViewCell.SelectionStyle.none
             
             return cell
         }else{
@@ -38,6 +39,7 @@ class TestingViewController: UIViewController, UICollectionViewDataSource, UICol
             cell.clCollectionView.delegate = self
             cell.clCollectionView.dataSource = self
             cell.clCollectionView.tag = 1
+            cell.selectionStyle = UITableViewCell.SelectionStyle.none
             
             return cell
         }
@@ -51,6 +53,7 @@ class TestingViewController: UIViewController, UICollectionViewDataSource, UICol
             viewController.img = UIImage(named: imgArray[indexPath.row])
             viewController.detail = notesArray[indexPath.row]
             viewController.khasiat = khasiatArray[indexPath.row]
+//            viewController.kontra = kontraArray[indexPath.row]
             //viewController.kontra = kontraArray[indexPath.row]
             
             self.navigationController?.pushViewController(viewController, animated: true)
@@ -85,6 +88,8 @@ class TestingViewController: UIViewController, UICollectionViewDataSource, UICol
             cell.imgBerita.image = UIImage(named: imgArray2[indexPath.row])
             cell.lblBerita.text = lblArray2[indexPath.row]
             
+            
+            
             return cell
         }
     }
@@ -92,9 +97,25 @@ class TestingViewController: UIViewController, UICollectionViewDataSource, UICol
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         if isLogin == false {
             print("tes")
         }
+        
+        let image: UIImage = UIImage(named: "LOGO-TOG")!
+        let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        imageView.contentMode = .scaleAspectFit
+        imageView.image = image
+        
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.topItem?.titleView = imageView
+        navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor : UIColor.white]
+        
+        
+        
+        
+        
         
         // Do any additional setup after loading the view.
     }
